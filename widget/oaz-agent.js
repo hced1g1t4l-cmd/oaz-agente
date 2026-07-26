@@ -66,7 +66,10 @@
   var recognition = null;
   var busy = false;
   var flow = null; // fluxo consultivo em andamento (ajuda a escolher produto)
-  var lastCategory = null; // última categoria falada (contexto p/ "me ajude a escolher")
+  var greeted = false; // saudação já exibida na sessão visual atual
+  // ---- contexto da conversa (mantido mesmo ao minimizar) ----
+  var lastCategory = null; // última categoria falada
+  var lastProducts = null; // últimos produtos mostrados (p/ "quais os preços?")
 
   // ---- utilidades ---------------------------------------------------------
   function el(tag, cls, html) {
@@ -217,6 +220,7 @@
     document.body.appendChild(root);
 
     setupSpeech();
+    loadCtx(); // restaura contexto da conversa (categoria/produtos) desta aba
   }
 
   function autoGrow() {
@@ -230,16 +234,23 @@
   }
   function open() {
     root.classList.add("oaz-open");
-    if (!history.length) {
+    if (!greeted) {
       addBot(CFG.greeting, CFG.suggestions);
+      greeted = true;
     }
     setTimeout(function () {
       textarea.focus();
     }, 220);
   }
+  // Minimizar encerra a SESSÃO VISUAL (limpa a conversa na tela), mas mantém o
+  // CONTEXTO (categoria/produtos falados) para a próxima interação com o cliente.
   function close() {
     root.classList.remove("oaz-open");
     if (recognizing) stopMic();
+    messagesEl.innerHTML = "";
+    greeted = false;
+    flow = null; // encerra qualquer fluxo guiado em andamento
+    // NÃO limpamos lastCategory/lastProducts/history: contexto é preservado.
   }
 
   // ---- mensagens ----------------------------------------------------------
@@ -335,6 +346,7 @@
         typing.remove();
         addBot(res.reply, res.suggestions || null);
         history.push({ role: "assistant", content: res.reply });
+        saveCtx(); // persiste o contexto (categoria/produtos) para a sessão
       })
       .catch(function () {
         typing.remove();
@@ -483,6 +495,7 @@
     }
     var LIMIT = 8;
     var shown = prods.slice(0, LIMIT);
+    lastProducts = shown; // contexto p/ "quais os preços?"
     var linhas = shown.map(function (p) {
       var preco = p.preco ? " — " + p.preco : "";
       return "• " + p.titulo + preco + ": " + p.url;
@@ -832,6 +845,7 @@
       return d !== 0 ? d : priceNum(a) - priceNum(b);
     });
     var top = list.slice(0, 3);
+    lastProducts = top; // contexto p/ "quais os preços?"
 
     flow.step = "done"; // mantém o fluxo p/ refinar / ver todas
 
@@ -948,6 +962,7 @@
       var d = (prodFps(b) || 0) - (prodFps(a) || 0);
       return d !== 0 ? d : priceNumber(a) - priceNumber(b);
     });
+    lastProducts = list.slice(0, 8); // contexto p/ "quais os preços?"
 
     // descrição curta do que foi pedido (pra soar relacional)
     var desc = [];
@@ -1034,6 +1049,109 @@
     };
   }
 
+  // ==== PREÇOS (usa o contexto da conversa) ================================
+  // termos que indicam pergunta de preço
+  var PRICE_RE =
+    /(preco|precos|quanto custa|quanto sai|quanto fica|qual o valor|qual e o valor|quais os precos|qual o preco|qual e o preco|valores|quanto e|quanto vale|qto custa)/;
+  // contextos que NÃO são preço de produto (frete/pagamento/etc.) -> vão p/ retrieve
+  var NONPRICE_CTX =
+    /(frete|entrega|envio|pagament|cupom|desconto|troca|devolu|rastre|pedido|nota fiscal|boleto|\bpix\b|cartao)/;
+
+  function isPriceQuery(text) {
+    var n = normalize(text);
+    if (NONPRICE_CTX.test(n)) return false;
+    return PRICE_RE.test(n);
+  }
+
+  // Responde preços usando o contexto: categoria citada agora, últimos produtos
+  // mostrados, ou a última categoria falada. Retorna null se não há contexto.
+  function priceAnswer(cat) {
+    var list = null,
+      label = null,
+      url = CFG.channelsUrl;
+    var cats = window.OAZ_CATS || {};
+    var KB = window.OAZ_KB || [];
+
+    if (cat) {
+      list = KB.filter(function (a) { return a.subcategoria === cat.key; });
+      label = cat.meta.label;
+      url = cat.meta.url;
+    } else if (lastProducts && lastProducts.length) {
+      list = lastProducts.slice();
+      if (lastCategory && cats[lastCategory]) {
+        label = cats[lastCategory].label;
+        url = cats[lastCategory].url;
+      }
+    } else if (lastCategory) {
+      list = KB.filter(function (a) { return a.subcategoria === lastCategory; });
+      if (cats[lastCategory]) {
+        label = cats[lastCategory].label;
+        url = cats[lastCategory].url;
+      }
+    }
+    if (!list || !list.length) return null; // sem contexto
+
+    var withPrice = list.filter(function (p) { return p.preco; });
+    var base = (withPrice.length ? withPrice : list).slice().sort(function (a, b) {
+      return priceNumber(a) - priceNumber(b);
+    });
+    lastProducts = base.slice(0, 8); // mantém o contexto atualizado
+    if (lastCategory) saveCtx();
+
+    var LIMIT = 8;
+    var shown = base.slice(0, LIMIT);
+    var linhas = shown.map(function (p) {
+      return "• " + p.titulo + (p.preco ? " — " + p.preco : " — (preço no site)") + ": " + p.url;
+    });
+
+    var lead = label ? "Claro! Preços de " + label + ":" : "Claro! Os preços:";
+    if (withPrice.length > 1) {
+      var vals = withPrice.map(priceNumber).filter(function (v) { return v < 9999; });
+      if (vals.length > 1) {
+        var min = Math.min.apply(null, vals);
+        var max = Math.max.apply(null, vals);
+        lead =
+          (label ? "Os " + label : "Os produtos") + " vão de " + brl(min) + " a " +
+          brl(max) + ". Alguns exemplos:";
+      }
+    }
+    var extra = base.length > LIMIT ? "\n\nVer todos: " + url : "";
+    return {
+      reply: lead + "\n\n" + linhas.join("\n") + extra +
+        "\n\nQuer que eu te ajude a escolher a melhor opção pra você?",
+      suggestions: ["Me ajude a escolher", "Falar com atendimento"],
+    };
+  }
+
+  // ==== CONTEXTO PERSISTENTE (sobrevive a minimizar/recarregar na aba) ======
+  var SS_KEY = "oaz_agent_ctx";
+  function saveCtx() {
+    try {
+      sessionStorage.setItem(
+        SS_KEY,
+        JSON.stringify({
+          lastCategory: lastCategory,
+          lastProductIds: (lastProducts || []).map(function (p) { return p.id; }),
+        })
+      );
+    } catch (e) {}
+  }
+  function loadCtx() {
+    try {
+      var s = sessionStorage.getItem(SS_KEY);
+      if (!s) return;
+      var o = JSON.parse(s);
+      lastCategory = o.lastCategory || null;
+      if (o.lastProductIds && o.lastProductIds.length) {
+        var byId = {};
+        (window.OAZ_KB || []).forEach(function (a) { byId[a.id] = a; });
+        lastProducts = o.lastProductIds
+          .map(function (id) { return byId[id]; })
+          .filter(Boolean);
+      }
+    } catch (e) {}
+  }
+
   function answerViaDemo(text) {
     return new Promise(function (resolve) {
       // latência simulada para parecer natural
@@ -1088,6 +1206,13 @@
         // 1) categoria: se dá pra orientar a escolha, INTERAGE (não só lista)
         if (cat) {
           lastCategory = cat.key;
+          // preço citando a categoria ("preço do protetor") -> preços diretos
+          if (isPriceQuery(text)) {
+            var pcat = priceAnswer(cat);
+            if (health) pcat.reply += healthDisclaimer();
+            resolve(pcat);
+            return;
+          }
           if (WIZARDS[cat.key] && (isAdviceQuery(text) || !hasSpecificFilter(text))) {
             resolve(startWizard(cat.key, text));
             return;
@@ -1096,6 +1221,23 @@
           var fres = composeFiltered(cat, text);
           if (health) fres.reply += healthDisclaimer();
           resolve(fres);
+          return;
+        }
+
+        // 1b) preço SEM citar a categoria -> usa o contexto (últimos produtos)
+        if (isPriceQuery(text)) {
+          var pa = priceAnswer(null);
+          if (pa) {
+            if (health) pa.reply += healthDisclaimer();
+            resolve(pa);
+            return;
+          }
+          resolve({
+            reply:
+              "Sobre qual produto você quer saber o preço? Posso te mostrar " +
+              "protetores solares, repelentes, hidratantes e mais 🙂",
+            suggestions: categorySuggestions(),
+          });
           return;
         }
 
