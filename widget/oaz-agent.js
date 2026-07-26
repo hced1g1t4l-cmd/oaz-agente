@@ -155,7 +155,7 @@
     var header = el("div", "oaz-agent-header");
     header.innerHTML =
       '<div class="oaz-agent-avatar">' +
-      ICONS.spark +
+      ICONS.chat +
       "</div>" +
       '<div class="oaz-agent-header-txt">' +
       '<div class="oaz-agent-header-title">Assistente OAZ</div>' +
