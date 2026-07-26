@@ -66,6 +66,7 @@
   var recognition = null;
   var busy = false;
   var flow = null; // fluxo consultivo em andamento (ajuda a escolher produto)
+  var lastCategory = null; // última categoria falada (contexto p/ "me ajude a escolher")
 
   // ---- utilidades ---------------------------------------------------------
   function el(tag, cls, html) {
@@ -588,6 +589,25 @@
     var f = parseInt(p.fps, 10);
     return isNaN(f) ? null : f;
   }
+  function priceNumber(p) {
+    var m = (p.preco || "").replace(/[^0-9,]/g, "").replace(",", ".");
+    var v = parseFloat(m);
+    return isNaN(v) ? 9999 : v;
+  }
+  function brl(v) {
+    return "R$ " + v.toFixed(2).replace(".", ",");
+  }
+  function colorOf(p) {
+    var t = normalize(p.titulo);
+    if (/incolor/.test(t)) return "Incolor";
+    var m = t.match(/\bcor\s*(\d+)\b/);
+    if (m) return "Cor " + m[1];
+    return null;
+  }
+  function humanList(arr) {
+    if (arr.length <= 1) return arr.join("");
+    return arr.slice(0, -1).join(", ") + " e " + arr[arr.length - 1];
+  }
 
   // matchers: convertem a resposta do cliente em um valor de faceta (ou null)
   function matchArea(text) {
@@ -843,6 +863,131 @@
     };
   }
 
+  // resposta FILTRADA e relacional (quando o cliente já foi específico:
+  // "em bastão", "cores", "spray", "facial", "infantil", "fps 70"...)
+  function composeFiltered(cat, text) {
+    var key = cat.key;
+    var meta = cat.meta;
+    var n = normalize(text);
+    var f = {
+      formato: /bastao|stick/.test(n)
+        ? "bastao"
+        : /spray|aerossol/.test(n)
+        ? "spray"
+        : /creme|locao|gel/.test(n)
+        ? "creme"
+        : null,
+      area: matchArea(text),
+      publico: matchPublico(text),
+      fps: matchFps(text),
+      color: /\bcor(es)?\b|\btom\b|\btonalidade|incolor/.test(n),
+    };
+    if (f.area === "__any__") f.area = null;
+    if (f.publico === "__any__") f.publico = null;
+    if (f.fps === "__any__") f.fps = null;
+
+    var list = (window.OAZ_KB || []).filter(function (a) {
+      return a.subcategoria === key;
+    });
+    function apply(pred) {
+      var r = list.filter(pred);
+      if (r.length) list = r;
+    }
+    if (f.formato) apply(function (p) { return prodFormato(p) === f.formato; });
+    if (f.area) apply(function (p) { return prodArea(p) === f.area; });
+    if (f.publico) apply(function (p) { return p.publico === f.publico; });
+    if (f.fps && f.fps !== "__max__")
+      apply(function (p) { return prodFps(p) && prodFps(p) >= f.fps; });
+    list = list.slice().sort(function (a, b) {
+      var d = (prodFps(b) || 0) - (prodFps(a) || 0);
+      return d !== 0 ? d : priceNumber(a) - priceNumber(b);
+    });
+
+    // descrição curta do que foi pedido (pra soar relacional)
+    var desc = [];
+    if (f.formato === "bastao") desc.push("em bastão (stick)");
+    else if (f.formato === "spray") desc.push("em spray/aerossol");
+    else if (f.formato === "creme") desc.push("em creme/loção");
+    if (f.area) desc.push(f.area === "rosto" ? "facial" : "pra " + AREA_LABEL[f.area]);
+    if (f.publico === "infantil") desc.push("infantil");
+    else if (f.publico === "adulto") desc.push("adulto");
+    if (f.fps && f.fps !== "__max__") desc.push("FPS " + f.fps + "+");
+    var descTxt = desc.length ? " " + desc.join(" ") : "";
+
+    if (!list.length) {
+      return {
+        reply:
+          "Hmm, não achei um item exatamente" + descTxt + " na base. Posso te " +
+          "ajudar a escolher entre as opções que temos? Se preferir, veja a " +
+          "categoria completa: " + meta.url,
+        suggestions: ["Me ajude a escolher", "Falar com atendimento"],
+      };
+    }
+
+    // Pergunta sobre COR -> resposta relacional, listando os tons daquele produto
+    if (f.color) {
+      var cores = [];
+      var seen = {};
+      list.forEach(function (p) {
+        var c = colorOf(p);
+        if (c && !seen[c]) {
+          seen[c] = 1;
+          cores.push(c);
+        }
+      });
+      if (cores.length) {
+        cores.sort(function (a, b) {
+          if (a === "Incolor") return 1;
+          if (b === "Incolor") return -1;
+          return a.localeCompare(b, "pt", { numeric: true });
+        });
+        var lead =
+          "O protetor" + descTxt + " da OAZ vem em " + cores.length + " op" +
+          (cores.length > 1 ? "ções" : "ção") + " de cor: " + humanList(cores) + ".";
+        var linhas = list
+          .filter(function (p) { return colorOf(p); })
+          .sort(function (a, b) {
+            var ca = colorOf(a) || "", cb = colorOf(b) || "";
+            if (ca === "Incolor") return 1;
+            if (cb === "Incolor") return -1;
+            return ca.localeCompare(cb, "pt", { numeric: true });
+          })
+          .map(function (p) {
+            var c = colorOf(p) || p.titulo;
+            var preco = p.preco ? " — " + p.preco : "";
+            return "• " + c + preco + ": " + p.url;
+          });
+        var reply =
+          lead + "\n\n" + linhas.join("\n") +
+          "\n\nQuer que eu te ajude a escolher o tom ideal pra sua pele?";
+        return {
+          reply: reply,
+          suggestions: ["Me ajude a escolher", "Falar com atendimento"],
+        };
+      }
+    }
+
+    // Caso geral filtrado -> relacional (mostra só o relevante + oferta de ajuda)
+    var LIMIT = 6;
+    var shown = list.slice(0, LIMIT);
+    var linhas2 = shown.map(function (p) {
+      var preco = p.preco ? " — " + p.preco : "";
+      return "• " + p.titulo + preco + ": " + p.url;
+    });
+    var total = list.length;
+    var lead2 =
+      "Encontrei " + total + " opç" + (total > 1 ? "ões" : "ão") + descTxt +
+      (total > LIMIT ? " (te mostro " + LIMIT + "):" : " pra você:");
+    var extra = total > LIMIT ? "\n\nVer todas: " + meta.url : "";
+    var reply2 =
+      lead2 + "\n\n" + linhas2.join("\n") + extra +
+      "\n\nQuer que eu te ajude a escolher a melhor pra você?";
+    return {
+      reply: reply2,
+      suggestions: ["Me ajude a escolher"].concat(categorySuggestions(key)).slice(0, 3),
+    };
+  }
+
   function answerViaDemo(text) {
     return new Promise(function (resolve) {
       // latência simulada para parecer natural
@@ -862,16 +1007,15 @@
 
         // 1) categoria: se dá pra orientar a escolha, INTERAGE (não só lista)
         if (cat) {
+          lastCategory = cat.key;
           if (WIZARDS[cat.key] && (isAdviceQuery(text) || !hasSpecificFilter(text))) {
             resolve(startWizard(cat.key, text));
             return;
           }
-          var reply = composeCategoryAnswer(cat, text);
-          if (health) reply += healthDisclaimer();
-          resolve({
-            reply: reply,
-            suggestions: categorySuggestions(cat.key),
-          });
+          // já foi específico -> resposta filtrada e relacional (não "busca")
+          var fres = composeFiltered(cat, text);
+          if (health) fres.reply += healthDisclaimer();
+          resolve(fres);
           return;
         }
 
@@ -880,6 +1024,12 @@
           var sup = supportAnswer();
           if (health) sup += healthDisclaimer();
           resolve({ reply: sup, suggestions: categorySuggestions() });
+          return;
+        }
+
+        // 2b) pediu ajuda p/ escolher sem citar a categoria -> usa a última
+        if (isAdviceQuery(text) && lastCategory && WIZARDS[lastCategory]) {
+          resolve(startWizard(lastCategory, text));
           return;
         }
 
