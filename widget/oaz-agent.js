@@ -86,7 +86,11 @@
 
   var STOPWORDS = new Set(
     ("de da do das dos a o e que qual quais quanto quanta como onde para por " +
-      "com um uma tem ter voces vcs me eu ai la no na nos nas em se sao e o os as")
+      "com um uma tem ter voces vcs me eu ai la no na nos nas em se sao e o os as " +
+      // interrogativos / auxiliares / dêiticos — não carregam intenção de domínio
+      "quem vai vao vou vamos ser sera foi era quero queria gostaria preciso " +
+      "sobre isso esse essa este esta isto aqui agora entao pra pro ao aos " +
+      "meu minha seu sua nao sim ok obg obrigado obrigada")
       .split(" ")
   );
 
@@ -425,6 +429,14 @@
     sabonete: ["sabonete", "sabonetes", "intimo"],
   };
 
+  // casa a expressão como PALAVRA inteira (evita "dente" dentro de "presidente",
+  // "solar" dentro de "eleitoral", etc.) sobre o texto já normalizado.
+  function hasWord(normalizedText, phrase) {
+    var p = normalize(phrase).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (!p) return false;
+    return new RegExp("(^|\\s)" + p + "($|\\s)").test(normalizedText);
+  }
+
   function detectCategory(query) {
     var n = normalize(query);
     var cats = window.OAZ_CATS || {};
@@ -432,7 +444,7 @@
       if (!CAT_SYNONYMS.hasOwnProperty(key)) continue;
       var syns = CAT_SYNONYMS[key];
       for (var i = 0; i < syns.length; i++) {
-        if (n.indexOf(normalize(syns[i])) !== -1) {
+        if (hasWord(n, syns[i])) {
           return { key: key, meta: cats[key] || { label: key, url: "https://www.oaz.vc" } };
         }
       }
@@ -489,8 +501,10 @@
         (CFG.contactHours ? " (" + CFG.contactHours + ")" : "")
       : "pelos canais oficiais no site " + CFG.channelsUrl;
     return (
-      "Não encontrei essa informação com segurança. Para não te passar algo " +
-      "errado, fale com o atendimento da OAZ " + canal + " 💬"
+      "Sobre isso eu não tenho informação. Sou o assistente virtual da OAZ e " +
+      "ajudo com assuntos da loja: produtos, frete, pagamento, trocas, " +
+      "rastreamento e dúvidas do site. Se precisar, fale com o atendimento da " +
+      "OAZ " + canal + " 💬"
     );
   }
 
