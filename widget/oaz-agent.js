@@ -65,6 +65,7 @@
   var recognizing = false;
   var recognition = null;
   var busy = false;
+  var flow = null; // fluxo consultivo em andamento (ajuda a escolher produto)
 
   // ---- utilidades ---------------------------------------------------------
   function el(tag, cls, html) {
@@ -562,15 +563,309 @@
     return out.slice(0, 3);
   }
 
+  // ==== FLUXO CONSULTIVO (ajuda o cliente a escolher, não só lista) =========
+  var AREA_LABEL = { rosto: "rosto", corpo: "corpo", cabelo: "cabelo", labios: "lábios" };
+  var FORMATO_LABEL = { spray: "spray/aerossol", bastao: "bastão", creme: "creme/loção" };
+
+  function prodText(p) {
+    return normalize(p.titulo + " " + (p.tags || []).join(" "));
+  }
+  function prodArea(p) {
+    var t = prodText(p);
+    if (/capilar|cabelo/.test(t)) return "cabelo";
+    if (/labial|labio/.test(t)) return "labios";
+    if (/facial|rosto|face|stick|bastao/.test(t)) return "rosto";
+    return "corpo";
+  }
+  function prodFormato(p) {
+    var t = prodText(p);
+    if (/spray|aerossol/.test(t)) return "spray";
+    if (/stick|bastao/.test(t)) return "bastao";
+    if (/creme|locao|gel|hidrat/.test(t)) return "creme";
+    return "outro";
+  }
+  function prodFps(p) {
+    var f = parseInt(p.fps, 10);
+    return isNaN(f) ? null : f;
+  }
+
+  // matchers: convertem a resposta do cliente em um valor de faceta (ou null)
+  function matchArea(text) {
+    var n = normalize(text);
+    if (/(tanto faz|qualquer|indiferente|nao sei|pode ser qualquer)/.test(n)) return "__any__";
+    if (/(rosto|facial|face|cara)/.test(n)) return "rosto";
+    if (/(corpo|corporal|braco|perna|pele do corpo)/.test(n)) return "corpo";
+    if (/(cabelo|capilar|fio)/.test(n)) return "cabelo";
+    if (/(labio|labial|boca)/.test(n)) return "labios";
+    return null;
+  }
+  function matchPublico(text) {
+    var n = normalize(text);
+    if (/(tanto faz|qualquer|indiferente|nao sei)/.test(n)) return "__any__";
+    if (/(infantil|crianca|kids|filho|filha|bebe)/.test(n)) return "infantil";
+    if (/(adulto|adult|para mim|pra mim|meu uso)/.test(n)) return "adulto";
+    return null;
+  }
+  function matchFps(text) {
+    var n = normalize(text);
+    if (/(a maior|maior possivel|maxima|maximo|mais alto|mais forte)/.test(n)) return "__max__";
+    if (/(tanto faz|qualquer|indiferente|nao sei)/.test(n)) return "__any__";
+    var m = n.match(/\b(30|50|60|70|80|90|99|100)\b/);
+    if (m) return parseInt(m[1], 10);
+    return null;
+  }
+
+  var WIZARDS = {
+    "protetor-solar": {
+      intro: "Claro! Vou te ajudar a escolher o protetor ideal. 😊",
+      questions: [
+        {
+          facet: "area",
+          match: matchArea,
+          prompt: "Pra começar: você quer proteção pra qual parte?",
+          chips: ["Rosto", "Corpo", "Cabelo", "Lábios", "Tanto faz"],
+        },
+        {
+          facet: "publico",
+          match: matchPublico,
+          prompt: "É pra uso adulto ou infantil?",
+          chips: ["Adulto", "Infantil"],
+        },
+        {
+          facet: "fps",
+          match: matchFps,
+          prompt: "E o nível de proteção (FPS) que você prefere?",
+          chips: ["FPS 30", "FPS 50", "FPS 60", "FPS 70", "A maior possível"],
+        },
+      ],
+    },
+    repelente: {
+      intro: "Posso te ajudar a escolher o repelente certo. 😊",
+      questions: [
+        {
+          facet: "publico",
+          match: matchPublico,
+          prompt: "É pra uso adulto ou infantil?",
+          chips: ["Adulto", "Infantil", "Tanto faz"],
+        },
+      ],
+    },
+    hidratante: {
+      intro: "Vou te ajudar a achar o hidratante ideal. 😊",
+      questions: [
+        {
+          facet: "area",
+          match: matchArea,
+          prompt: "É pra hidratar qual região?",
+          chips: ["Corpo", "Rosto", "Lábios", "Tanto faz"],
+        },
+      ],
+    },
+  };
+
+  function hasSpecificFilter(text) {
+    var n = normalize(text);
+    return (
+      /\bfps\b/.test(n) ||
+      /\b(30|50|60|70|80|90)\b/.test(n) ||
+      /(infantil|crianca|bebe|kids)/.test(n) ||
+      /(rosto|facial|corpo|corporal|cabelo|capilar|labio|labial)/.test(n) ||
+      /(spray|aerossol|creme|locao|bastao|stick|gel)/.test(n)
+    );
+  }
+
+  var ADVICE_TERMS = [
+    "ajud", "escolh", "me ajuda", "qual o melhor", "qual e o melhor", "melhor",
+    "indica", "indique", "recomend", "suges", "sugir", "sugere", "nao sei qual",
+    "qual devo", "qual comprar", "qual usar", "ideal", "qual e bom", "qual e melhor",
+    "o que voces recomendam", "preciso de um", "qual vc recomenda", "qual voces indicam",
+  ];
+  function isAdviceQuery(text) {
+    var n = normalize(text);
+    return ADVICE_TERMS.some(function (t) {
+      return n.indexOf(normalize(t)) !== -1;
+    });
+  }
+
+  function questionByFacet(catKey, facet) {
+    var qs = WIZARDS[catKey].questions;
+    for (var i = 0; i < qs.length; i++) if (qs[i].facet === facet) return qs[i];
+    return null;
+  }
+  function currentQuestion() {
+    return questionByFacet(flow.cat, flow.step);
+  }
+  function questionChips(q) {
+    return q.chips.concat(["Ver todas as opções"]);
+  }
+
+  function askNext() {
+    var qs = WIZARDS[flow.cat].questions;
+    for (var i = 0; i < qs.length; i++) {
+      if (!(qs[i].facet in flow.answers)) {
+        flow.step = qs[i].facet;
+        return { reply: qs[i].prompt, suggestions: questionChips(qs[i]) };
+      }
+    }
+    return recommend();
+  }
+
+  function startWizard(catKey, initialText) {
+    flow = { cat: catKey, answers: {}, step: null };
+    // pré-preenche facetas já ditas na pergunta inicial
+    WIZARDS[catKey].questions.forEach(function (q) {
+      var v = q.match(initialText || "");
+      if (v !== null) flow.answers[q.facet] = v;
+    });
+    var res = askNext();
+    // se ainda há pergunta a fazer, prefixa a saudação do fluxo
+    if (flow && flow.step !== "done") {
+      var intro = WIZARDS[catKey].intro;
+      if (intro) res.reply = intro + "\n\n" + res.reply;
+    }
+    return res;
+  }
+
+  function prodTagline(p) {
+    var bits = [];
+    if (p.fps) bits.push("FPS " + p.fps);
+    bits.push(AREA_LABEL[prodArea(p)]);
+    var f = prodFormato(p);
+    if (f !== "outro") bits.push(FORMATO_LABEL[f]);
+    return bits.join(" · ");
+  }
+
+  function recommend() {
+    var key = flow.cat;
+    var ans = flow.answers;
+    var meta = (window.OAZ_CATS || {})[key] || { label: key, url: CFG.channelsUrl };
+    var list = (window.OAZ_KB || []).filter(function (a) {
+      return a.subcategoria === key;
+    });
+    // aplica facetas (relaxa se zerar)
+    if (ans.publico && ans.publico !== "__any__") {
+      var fp = list.filter(function (p) { return p.publico === ans.publico; });
+      if (fp.length) list = fp;
+    }
+    if (ans.area && ans.area !== "__any__") {
+      var fa = list.filter(function (p) { return prodArea(p) === ans.area; });
+      if (fa.length) list = fa;
+    }
+    if (ans.fps && ans.fps !== "__any__" && ans.fps !== "__max__") {
+      var ge = list.filter(function (p) { return prodFps(p) && prodFps(p) >= ans.fps; });
+      if (ge.length) list = ge;
+    }
+    // ordena: maior FPS primeiro, depois menor preço
+    function priceNum(p) {
+      var m = (p.preco || "").replace(/[^0-9,]/g, "").replace(",", ".");
+      var v = parseFloat(m);
+      return isNaN(v) ? 9999 : v;
+    }
+    list = list.slice().sort(function (a, b) {
+      var d = (prodFps(b) || 0) - (prodFps(a) || 0);
+      return d !== 0 ? d : priceNum(a) - priceNum(b);
+    });
+    var top = list.slice(0, 3);
+
+    flow.step = "done"; // mantém o fluxo p/ refinar / ver todas
+
+    if (!top.length) {
+      return {
+        reply:
+          "Não encontrei um item que bata exatamente com isso na base. " +
+          "Você pode ver a categoria completa aqui: " + meta.url,
+        suggestions: ["Refazer escolha", "Falar com atendimento"],
+      };
+    }
+
+    var chosen = [];
+    if (ans.area && ans.area !== "__any__") chosen.push(AREA_LABEL[ans.area]);
+    if (ans.publico && ans.publico !== "__any__") chosen.push(ans.publico);
+    if (ans.fps === "__max__") chosen.push("proteção máxima");
+    else if (ans.fps && ans.fps !== "__any__") chosen.push("FPS " + ans.fps + "+");
+
+    var intro = chosen.length
+      ? "Perfeito! Com base no que você me disse (" + chosen.join(", ") + "), eu recomendaria:"
+      : "Perfeito! Eu começaria por estes:";
+    var linhas = top.map(function (p) {
+      var preco = p.preco ? " — " + p.preco : "";
+      return "• " + p.titulo + " (" + prodTagline(p) + ")" + preco + ":\n" + p.url;
+    });
+    var reply =
+      intro + "\n\n" + linhas.join("\n\n") +
+      "\n\nQuer que eu ajuste a recomendação ou prefere ver todas as opções?";
+    if (ans.publico === "infantil") reply += healthDisclaimer();
+
+    return {
+      reply: reply,
+      suggestions: ["Ver todas as opções", "Refazer escolha", "Falar com atendimento"],
+    };
+  }
+
+  // interpreta a mensagem do cliente dentro do fluxo; retorna null p/ "sair"
+  function handleFlow(text) {
+    var n = normalize(text);
+    if (/(ver todas|todas as opcoes|ver tudo|mostrar tudo|ver todos|todos os|lista completa)/.test(n)) {
+      var meta = (window.OAZ_CATS || {})[flow.cat] || { label: flow.cat, url: CFG.channelsUrl };
+      var cat = { key: flow.cat, meta: meta };
+      var key = flow.cat;
+      flow = null;
+      return { reply: composeCategoryAnswer(cat, ""), suggestions: categorySuggestions(key) };
+    }
+    if (/(refazer|recomecar|comecar de novo|reiniciar|de novo)/.test(n)) {
+      var c = flow.cat;
+      flow = null;
+      return startWizard(c, "");
+    }
+    if (isSupportQuery(text)) return null; // deixa cair no atendimento
+    var other = detectCategory(text);
+    if (other && other.key !== flow.cat) return null; // trocou de categoria
+
+    // tenta interpretar como resposta a qualquer faceta
+    var progressed = false;
+    WIZARDS[flow.cat].questions.forEach(function (q) {
+      var v = q.match(text);
+      if (v !== null && flow.answers[q.facet] !== v) {
+        flow.answers[q.facet] = v;
+        progressed = true;
+      }
+    });
+
+    if (flow.step === "done") {
+      return progressed ? recommend() : null;
+    }
+    if (progressed) return askNext();
+
+    var cq = currentQuestion();
+    return {
+      reply: "Só pra eu te indicar certinho 🙂 " + cq.prompt,
+      suggestions: questionChips(cq),
+    };
+  }
+
   function answerViaDemo(text) {
     return new Promise(function (resolve) {
       // latência simulada para parecer natural
       setTimeout(function () {
+        // 0) fluxo consultivo em andamento
+        if (flow) {
+          var fres = handleFlow(text);
+          if (fres) {
+            resolve(fres);
+            return;
+          }
+          flow = null; // não era resposta do fluxo -> segue roteamento normal
+        }
+
         var health = isHealthQuery(text);
         var cat = detectCategory(text);
 
-        // 1) intenção de categoria -> lista SÓ daquela categoria, com links
+        // 1) categoria: se dá pra orientar a escolha, INTERAGE (não só lista)
         if (cat) {
+          if (WIZARDS[cat.key] && (isAdviceQuery(text) || !hasSpecificFilter(text))) {
+            resolve(startWizard(cat.key, text));
+            return;
+          }
           var reply = composeCategoryAnswer(cat, text);
           if (health) reply += healthDisclaimer();
           resolve({
