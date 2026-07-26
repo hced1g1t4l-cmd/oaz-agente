@@ -30,9 +30,10 @@
       greeting:
         "Oi! 👋 Sou o assistente virtual da OAZ. Posso te ajudar com produtos, frete, pagamento, trocas e dúvidas do site. Como posso ajudar?",
       suggestions: [
+        "Protetores solares",
+        "Repelentes",
         "Qual o valor do frete grátis?",
         "Tem cupom de desconto?",
-        "Quais protetores solares vocês têm?",
       ],
       minScore: 1.5, // limiar de confiança do modo demo
       typeSpeedMs: 12, // velocidade do "streaming" de texto
@@ -214,7 +215,7 @@
   function open() {
     root.classList.add("oaz-open");
     if (!history.length) {
-      addBot(CFG.greeting, null, CFG.suggestions);
+      addBot(CFG.greeting, CFG.suggestions);
     }
     setTimeout(function () {
       textarea.focus();
@@ -248,38 +249,26 @@
   }
 
   // adiciona resposta do bot com efeito de digitação (streaming)
-  function addBot(text, source, suggestions) {
+  function addBot(text, suggestions) {
     var wrap = el("div", "oaz-agent-msg oaz-bot");
     var bubble = el("div", "oaz-agent-bubble");
     wrap.appendChild(bubble);
     messagesEl.appendChild(wrap);
 
     var safe = linkify(escapeHtml(text));
-    // digita em incrementos para dar sensação de rapidez/dinamismo
-    var i = 0;
+    // digita em incrementos para dar sensação de rapidez/dinamismo.
+    // (velocidade adaptativa: respostas longas digitam mais rápido)
     var plain = text;
+    var stepChars = plain.length > 240 ? 5 : 2;
+    var i = 0;
     (function typeChar() {
       if (i <= plain.length) {
         bubble.innerHTML = linkify(escapeHtml(plain.slice(0, i)));
-        i += 2;
+        i += stepChars;
         scrollDown();
         setTimeout(typeChar, CFG.typeSpeedMs);
       } else {
         bubble.innerHTML = safe;
-        if (source) {
-          wrap.appendChild(
-            el(
-              "div",
-              "oaz-agent-source",
-              "Fonte: " +
-                '<a href="' +
-                source.url +
-                '" target="_blank" rel="noopener">' +
-                escapeHtml(source.titulo) +
-                "</a>"
-            )
-          );
-        }
         if (suggestions && suggestions.length) renderChips(suggestions);
         scrollDown();
       }
@@ -328,7 +317,7 @@
     answer
       .then(function (res) {
         typing.remove();
-        addBot(res.reply, res.source || null, res.suggestions || null);
+        addBot(res.reply, res.suggestions || null);
         history.push({ role: "assistant", content: res.reply });
       })
       .catch(function () {
@@ -361,7 +350,6 @@
       .then(function (data) {
         return {
           reply: data.reply || data.answer || "",
-          source: data.source || null,
           suggestions: data.suggestions || null,
         };
       });
@@ -417,6 +405,74 @@
     return { best: scored[0].art, score: scored[0].score, all: scored };
   }
 
+  // --- detecção de categoria (protetor solar, repelente, etc.) -------------
+  var CAT_SYNONYMS = {
+    "protetor-solar": ["protetor solar", "protetores solares", "protetores", "protetor", "fps", "solar", "protecao solar", "filtro solar"],
+    repelente: ["repelente", "repelentes", "mosquito", "dengue", "inseto", "pernilongo"],
+    hidratante: ["hidratante", "hidratantes", "creme", "pele seca", "hidratacao", "ureia", "castanha"],
+    "pos-sol": ["pos sol", "pos-sol", "depois do sol", "pos solar", "apos o sol"],
+    "higiene-bucal": ["higiene bucal", "enxaguante", "bucal", "boca", "dente", "escova", "fio dental", "oral"],
+    sabonete: ["sabonete", "sabonetes", "intimo"],
+  };
+
+  function detectCategory(query) {
+    var n = normalize(query);
+    var cats = window.OAZ_CATS || {};
+    for (var key in CAT_SYNONYMS) {
+      if (!CAT_SYNONYMS.hasOwnProperty(key)) continue;
+      var syns = CAT_SYNONYMS[key];
+      for (var i = 0; i < syns.length; i++) {
+        if (n.indexOf(normalize(syns[i])) !== -1) {
+          return { key: key, meta: cats[key] || { label: key, url: "https://www.oaz.vc" } };
+        }
+      }
+    }
+    return null;
+  }
+
+  function productsInCategory(key, query) {
+    var n = normalize(query);
+    var wantInfantil = /(infantil|crianca|bebe|kids)/.test(n);
+    var wantFps = (n.match(/\bfps\s?(\d{2})\b/) || n.match(/\b(\d{2})\s?fps\b/) || [])[1];
+    var list = (window.OAZ_KB || []).filter(function (a) {
+      return a.subcategoria === key;
+    });
+    if (wantInfantil) {
+      var inf = list.filter(function (a) { return a.publico === "infantil"; });
+      if (inf.length) list = inf;
+    }
+    if (wantFps) {
+      var f = list.filter(function (a) { return String(a.fps) === String(wantFps); });
+      if (f.length) list = f;
+    }
+    return list;
+  }
+
+  function composeCategoryAnswer(cat, query) {
+    var prods = productsInCategory(cat.key, query);
+    var label = cat.meta.label;
+    if (!prods.length) {
+      return (
+        "No momento não localizei itens de " + label + " na base. " +
+        "Você pode ver a categoria completa aqui: " + cat.meta.url
+      );
+    }
+    var LIMIT = 8;
+    var shown = prods.slice(0, LIMIT);
+    var linhas = shown.map(function (p) {
+      var preco = p.preco ? " — " + p.preco : "";
+      return "• " + p.titulo + preco + ": " + p.url;
+    });
+    var intro =
+      "A OAZ tem " + prods.length + " opções de " + label +
+      (prods.length > LIMIT ? " (mostrando " + LIMIT + "):" : ":");
+    var extra =
+      prods.length > LIMIT
+        ? "\n\nVer todos os " + prods.length + " itens: " + cat.meta.url
+        : "\n\nVer a categoria: " + cat.meta.url;
+    return intro + "\n\n" + linhas.join("\n") + extra;
+  }
+
   function fallbackMsg() {
     return (
       "Não encontrei essa informação com segurança. Para não te passar algo " +
@@ -435,50 +491,57 @@
     );
   }
 
+  // sugestões padrão de categorias (chips)
+  function categorySuggestions(exceptKey) {
+    var cats = window.OAZ_CATS || {};
+    var out = [];
+    ["protetor-solar", "repelente", "hidratante", "pos-sol", "higiene-bucal", "sabonete"].forEach(
+      function (k) {
+        if (k !== exceptKey && cats[k]) out.push(cats[k].label);
+      }
+    );
+    return out.slice(0, 3);
+  }
+
   function answerViaDemo(text) {
     return new Promise(function (resolve) {
       // latência simulada para parecer natural
       setTimeout(function () {
-        var r = retrieve(text);
         var health = isHealthQuery(text);
+        var cat = detectCategory(text);
 
-        if (!r.best || r.score < CFG.minScore) {
-          var msg = fallbackMsg();
-          if (health) msg = fallbackMsg() + healthDisclaimer();
-          resolve({ reply: msg });
+        // 1) intenção de categoria -> lista SÓ daquela categoria, com links
+        if (cat) {
+          var reply = composeCategoryAnswer(cat, text);
+          if (health) reply += healthDisclaimer();
+          resolve({
+            reply: reply,
+            suggestions: categorySuggestions(cat.key),
+          });
           return;
         }
 
-        var reply = r.best.conteudo;
-        if (health) reply += healthDisclaimer();
+        // 2) senão, busca o melhor artigo (institucional ou produto específico)
+        var r = retrieve(text);
+        if (!r.best || r.score < CFG.minScore) {
+          var msg = fallbackMsg();
+          if (health) msg += healthDisclaimer();
+          resolve({ reply: msg, suggestions: categorySuggestions() });
+          return;
+        }
 
-        // sugestões relacionadas (próximos melhores artigos)
-        var sugg = (r.all || [])
-          .slice(1, 4)
-          .filter(function (x) {
-            return x.score > 0;
-          })
-          .map(function (x) {
-            return "Sobre: " + x.art.titulo;
-          });
-
-        resolve({
-          reply: reply,
-          source: { titulo: r.best.titulo, url: r.best.url },
-          suggestions: sugg.length ? sugg : null,
-        });
-      }, 380);
+        var out = r.best.conteudo;
+        if (r.best.categoria === "produtos" && r.best.url) {
+          out += "\n\nVeja o produto: " + r.best.url;
+        }
+        if (health) out += healthDisclaimer();
+        resolve({ reply: out, suggestions: categorySuggestions() });
+      }, 320);
     });
   }
 
-  // trata clique em chip "Sobre: <titulo>"
   function submitChip(text) {
-    if (text.indexOf("Sobre: ") === 0) {
-      var t = text.slice(7);
-      submit(t);
-    } else {
-      submit(text);
-    }
+    submit(text);
   }
 
   // ---- áudio (Web Speech API no modo demo) --------------------------------
