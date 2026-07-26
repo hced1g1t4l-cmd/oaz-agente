@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>OAZ (DEMO) · Cuidado diário — testbed do Assistente Virtual</title>
+  <meta name="description" content="Site fake da OAZ criado apenas para testar o widget do Assistente Virtual. Não é o site oficial." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <!-- Faixa de aviso: é um site FAKE só para teste -->
+  <div class="demo-banner">
+    ⚠️ Site de <strong>demonstração</strong> — réplica fake da OAZ criada só para testar o
+    Assistente Virtual (canto inferior direito). Não é o site oficial.
+  </div>
+
+  <!-- Barra de frete -->
+  <div class="topbar">
+    Frete grátis para todo o Brasil acima de R$ 129,90 · Use <strong>BEMVINDO</strong> e ganhe 10% na 1ª compra
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header-inner">
+      <div class="logo">OAZ</div>
+      <nav class="nav">
+        <a href="#produtos">Produtos</a>
+        <a href="#linhas">Linhas</a>
+        <a href="#sobre">Somos OAZ</a>
+        <a href="#ajuda">Ajuda</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" aria-label="Buscar">Buscar</button>
+        <button class="btn-cart" aria-label="Carrinho">🛒 <span>0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-txt">
+        <span class="eyebrow">OAZ é cuidado diário</span>
+        <h1>Cuidar de você,<br />do seu jeito.</h1>
+        <p>Com a expertise da Eurofarma, a OAZ oferece higiene, proteção e cuidado
+        pessoal para acompanhar a sua rotina. Dermatologicamente testado e não
+        testado em animais.</p>
+        <div class="hero-cta">
+          <a href="#produtos" class="btn-primary">Ver produtos</a>
+          <a href="#sobre" class="btn-secondary">Conhecer a OAZ</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="hero-emoji">🧴</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linhas / categorias -->
+  <section id="linhas" class="wrap section">
+    <h2 class="section-title">Navegue por linha</h2>
+    <div class="cats">
+      <div class="cat"><span class="cat-ico">☀️</span><h3>Da praia ao campo</h3><p>Protetores solares e repelentes</p></div>
+      <div class="cat"><span class="cat-ico">🦟</span><h3>Proteção</h3><p>Repelente e pós-picada</p></div>
+      <div class="cat"><span class="cat-ico">😁</span><h3>Higiene bucal</h3><p>Enxaguante e cuidado oral</p></div>
+      <div class="cat"><span class="cat-ico">🧼</span><h3>Dia a dia</h3><p>Hidratante e sabonete</p></div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="wrap section">
+    <h2 class="section-title">Nossos produtos</h2>
+    <div class="grid" id="product-grid"><!-- preenchido via JS a partir da KB --></div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="about">
+    <div class="wrap about-inner">
+      <h2 class="section-title">Somos OAZ</h2>
+      <p>A OAZ é a marca de higiene e cuidado pessoal da Eurofarma. Uma linha
+      completa pensada para proteger, hidratar e cuidar de você e de quem você ama —
+      para a pele, a boca e o seu dia a dia.</p>
+      <div class="badges">
+        <span>✔ Qualidade Eurofarma</span>
+        <span>✔ Dermatologicamente testado</span>
+        <span>✔ Não testado em animais</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ajuda -->
+  <section id="ajuda" class="wrap section">
+    <h2 class="section-title">Precisa de ajuda?</h2>
+    <p class="help-lead">Toque no botão <strong>verde no canto inferior direito</strong>
+    para conversar com o Assistente Virtual OAZ. Você pode <strong>escrever</strong> ou
+    <strong>falar por áudio</strong>. Experimente perguntar:</p>
+    <ul class="help-list">
+      <li>“Qual o valor do frete grátis?”</li>
+      <li>“Tem cupom de desconto pra primeira compra?”</li>
+      <li>“Quais protetores solares vocês têm?”</li>
+      <li>“Como funciona a troca de um produto?”</li>
+      <li>“Posso usar o repelente em grávida?” (veja o guardrail de saúde)</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="logo">OAZ</div>
+      <p>Site de demonstração (fake) para teste do Assistente Virtual · Marca real: Eurofarma / oaz.vc</p>
+    </div>
+  </footer>
+
+  <!-- Monta os cards de produto a partir da mesma base do agente -->
+  <script defer src="widget/oaz-kb.js"></script>
+  <script defer src="site.js"></script>
+
+  <!-- ======================= AGENTE OAZ (widget) ======================= -->
+  <script>
+    window.OAZ_AGENT_CONFIG = {
+      mode: "demo", // TESTE: responde no navegador (sem backend/chave).
+      channelsUrl: "https://www.oaz.vc",
+      // Em produção, trocar para:
+      // mode: "api",
+      // backendUrl: "https://SEU-BACKEND/chat",
+    };
+  </script>
+  <link rel="stylesheet" href="widget/oaz-agent.css" />
+  <script defer src="widget/oaz-agent.js"></script>
+</body>
+</html>
