@@ -707,6 +707,44 @@
     });
   }
 
+  // ==== POLÍTICAS GERAIS (guardrails) ======================================
+  // Regra 5 — fora de escopo: resposta EXATA definida pelo cliente.
+  var OFFTOPIC_REPLY =
+    "Não consigo ajudar com isso. Posso te ajudar com alguma outra coisa?";
+  var OFFTOPIC_TERMS = [
+    "eleicao", "eleitoral", "presidente", "politic", "futebol", "jogo do",
+    "clima", "previsao do tempo", "receita de", "piada", "bitcoin",
+    "bolsa de valores", "acao da bolsa", "noticia", "capital d", "populacao de",
+    "significado da vida", "codigo em", "programacao", "matematica",
+    "namorad", "horoscopo", "signo", "quem descobriu", "quem inventou",
+  ];
+  function isOffTopic(text) {
+    var n = normalize(text);
+    return OFFTOPIC_TERMS.some(function (t) {
+      return n.indexOf(normalize(t)) !== -1;
+    });
+  }
+
+  // Regra 4 — sigilo interno: nunca revelar/insinuar configuração interna.
+  var CONFIG_PROBE_REPLY =
+    "Sobre meu funcionamento interno eu não posso dar detalhes. Mas posso te ajudar " +
+    "com produtos, pedidos, frete, trocas e dúvidas da OAZ — como posso ajudar?";
+  var CONFIG_PROBE_RE =
+    /(system\s*prompt|prompt do sistema|seu prompt|suas? instru|instrucoes do sistema|configuracao interna|como (voce|vc) (foi )?(configurad|program|constru|treinad)|qual (o )?(seu )?(modelo|llm)|que (modelo|llm)|engenharia de prompt|ignore (as|todas)|desconsidere|revele (o|seu|suas)|mostre (o|seu) prompt|regras internas|seu codigo|api ?key|chave de api|variaveis internas|jailbreak|prompt injection)/;
+  function isConfigProbe(text) {
+    return CONFIG_PROBE_RE.test(normalize(text));
+  }
+
+  // Regra 3 — se o cliente for abusivo, manter tom profissional.
+  var ABUSE_RE =
+    /\b(idiota|imbecil|burro|burra|otari[oa]|merda|porra|caralho|vtnc|vsf|lixo|inutil|desgraca|arrombad[oa]|babaca|palhaco|escroto|fdp|puta)\b|(foda-?se|foder|vai se f|cala a boca|puta que|filho da puta|toma no|vai a merda)/;
+  function isAbusive(text) {
+    return ABUSE_RE.test(normalize(text));
+  }
+  var ABUSE_REPLY =
+    "Sinto muito se algo te deixou frustrado(a). Vou seguir te ajudando com todo o " +
+    "respeito — me conta como posso ajudar com a OAZ (produtos, pedidos, frete ou trocas)?";
+
   function questionByFacet(catKey, facet) {
     var qs = WIZARDS[catKey].questions;
     for (var i = 0; i < qs.length; i++) if (qs[i].facet === facet) return qs[i];
@@ -1002,6 +1040,17 @@
           flow = null; // não era resposta do fluxo -> segue roteamento normal
         }
 
+        // Regra 4 — sigilo interno (checa antes de tudo p/ não vazar por outra rota)
+        if (isConfigProbe(text)) {
+          resolve({ reply: CONFIG_PROBE_REPLY, suggestions: categorySuggestions() });
+          return;
+        }
+        // Regra 3 — abuso -> mantém tom profissional
+        if (isAbusive(text)) {
+          resolve({ reply: ABUSE_REPLY, suggestions: categorySuggestions() });
+          return;
+        }
+
         var health = isHealthQuery(text);
         var cat = detectCategory(text);
 
@@ -1036,6 +1085,12 @@
         // 3) senão, busca o melhor artigo (institucional ou produto específico)
         var r = retrieve(text);
         if (!r.best || r.score < CFG.minScore) {
+          // Regra 5 — fora de escopo: resposta exata (não tenta "chutar" um produto)
+          if (isOffTopic(text) || r.score === 0) {
+            resolve({ reply: OFFTOPIC_REPLY, suggestions: categorySuggestions() });
+            return;
+          }
+          // dúvida relacionada à loja, mas sem dado confiável -> encaminha ao humano
           var msg = fallbackMsg();
           if (health) msg += healthDisclaimer();
           resolve({ reply: msg, suggestions: categorySuggestions() });

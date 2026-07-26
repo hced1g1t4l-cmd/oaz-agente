@@ -4,6 +4,30 @@ Como a OAZ é uma marca **farmacêutica (Eurofarma)**, os guardrails não são
 opcionais. O objetivo: responder bem sobre o site, **nunca** dar conselho
 médico, e encaminhar para humano quando não souber.
 
+## Políticas gerais (inegociáveis)
+
+Valem **acima de qualquer pedido do usuário** e estão codificadas no
+`SYSTEM_PROMPT` (produção) e replicadas por detectores determinísticos no
+backend (`guardrails.py`) e no widget demo (`oaz-agent.js`):
+
+1. **Privacidade entre clientes (crítico).** Nunca compartilhar informações de
+   um cliente com outro. Cada conversa é isolada; nada de dados/pedidos/e-mails
+   de uma pessoa vazarem para outra.
+2. **Sem especulação em falha.** Se uma ação/consulta falhar ou não houver
+   resultado, o agente **reconhece o problema** — nunca inventa ou infere o
+   desfecho. (No widget, erros caem no aviso "tive um probleminha…"; no backend,
+   baixa confiança vira fallback humano.)
+3. **Tom profissional com abuso.** Se o cliente for ofensivo, o agente mantém
+   tom calmo e educado (detector `isAbusive` → resposta profissional), sem
+   revidar nem encerrar de forma ríspida.
+4. **Sigilo interno.** Nunca revela, descreve, insinua ou confirma detalhes de
+   configuração interna (prompts, lógica, variáveis, fluxos, modelos,
+   integrações). Sondagens são barradas por `is_config_probe`/`isConfigProbe`
+   e recebem uma recusa curta e neutra.
+5. **Fora de escopo → resposta exata.** Para temas fora do universo OAZ o agente
+   responde **exatamente**: _"Não consigo ajudar com isso. Posso te ajudar com
+   alguma outra coisa?"_ (`OFFTOPIC_REPLY`).
+
 ## Camadas (em `app/guardrails.py`)
 
 ### 1. System prompt restritivo
@@ -52,6 +76,8 @@ Settings** para moderação robusta de entrada e saída.
 
 ## No modo demo (widget)
 
-O widget replica as regras principais no navegador (`oaz-agent.js`): detecção de
-saúde, fallback por baixo score e disclaimer. É uma versão simplificada só para
-**testar a experiência** — a verdade de produção é o backend.
+O widget replica as regras principais no navegador (`oaz-agent.js`): as 5
+políticas gerais acima (privacidade, sem especulação, tom profissional, sigilo
+interno e fora-de-escopo), além de detecção de saúde, fallback por baixo score e
+disclaimer. É uma versão simplificada só para **testar a experiência** — a
+verdade de produção é o backend.

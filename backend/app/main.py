@@ -60,6 +60,10 @@ async def answer(message: str, history: List[dict]) -> ChatResponse:
             f"Se precisar de suporte, fale com nosso atendimento: {settings.channels_url}"
         )
 
+    # 1b) Política 4 — sigilo interno: nunca revelar configuração/lógica interna
+    if guardrails.is_config_probe(message):
+        return ChatResponse(reply=guardrails.CONFIG_PROBE_REPLY)
+
     # 2) cache semântico (segura volume)
     hit = await cache.get(message)
     if hit:
