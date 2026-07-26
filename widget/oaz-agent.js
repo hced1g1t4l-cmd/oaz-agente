@@ -25,6 +25,7 @@
     {
       mode: "demo", // "demo" | "api"
       backendUrl: "", // endpoint POST no modo api
+      launcherImage: null, // imagem do botão flutuante (logo). null = ícone padrão
       channelsUrl: "https://www.oaz.vc", // fallback quando não sabe responder
       contactEmail: "ecommerce@eurofarma.com", // canal REAL de atendimento
       contactHours:
@@ -120,9 +121,15 @@
     // launcher + tooltip
     var launcher = el("button", "oaz-agent-launcher");
     launcher.setAttribute("aria-label", "Abrir assistente virtual da OAZ");
+    var chatIcon = CFG.launcherImage
+      ? '<img class="oaz-agent-launcher-img" src="' +
+        CFG.launcherImage +
+        '" alt="" aria-hidden="true" />'
+      : ICONS.chat;
+    if (CFG.launcherImage) launcher.classList.add("oaz-has-img");
     launcher.innerHTML =
       '<span class="oaz-agent-chat-icon">' +
-      ICONS.chat +
+      chatIcon +
       "</span>" +
       '<span class="oaz-agent-close-icon">' +
       ICONS.close +

@@ -50,6 +50,26 @@
   width: 30px;
   height: 30px;
 }
+/* variante com logo/imagem no botão */
+.oaz-agent-launcher.oaz-has-img {
+  border-radius: 30%;
+  background: var(--oaz-primary);
+  overflow: hidden;
+}
+.oaz-agent-launcher .oaz-agent-chat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.oaz-agent-launcher-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
 .oaz-agent-launcher .oaz-agent-close-icon {
   display: none;
 }
@@ -65,7 +85,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 50%;
+  border-radius: inherit;
   box-shadow: 0 0 0 0 rgba(50, 69, 149, 0.5);
   animation: oaz-halo 2.6s cubic-bezier(0.22, 1, 0.36, 1) 3;
 }

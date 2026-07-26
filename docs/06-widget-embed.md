@@ -22,6 +22,7 @@ servidor). Adicione antes de `</body>`:
     mode: "api",
     backendUrl: "https://SEU-BACKEND/chat",
     channelsUrl: "https://www.oaz.vc",
+    launcherImage: "https://SEU-CDN/oaz-launcher.png",
     primaryColor: "#324595"
   };
 </script>
@@ -46,6 +47,7 @@ Opções:
 | `mode` | `"demo"` | `"demo"` (navegador) ou `"api"` (backend) |
 | `backendUrl` | `""` | endpoint `/chat` do backend (modo api) |
 | `channelsUrl` | oaz.vc | link de fallback para atendimento |
+| `launcherImage` | `null` | logo/imagem no botão flutuante (`null` = ícone padrão) |
 | `primaryColor` | azul OAZ `#324595` | cor da marca do widget |
 | `greeting` | texto | mensagem de boas-vindas |
 | `suggestions` | 3 perguntas | chips de sugestão iniciais |
