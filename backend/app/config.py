@@ -32,6 +32,10 @@ class Settings:
     supabase_key: str = os.getenv("SUPABASE_KEY", "")
 
     channels_url: str = os.getenv("CHANNELS_URL", "https://www.oaz.vc")
+    contact_email: str = os.getenv("CONTACT_EMAIL", "ecommerce@eurofarma.com")
+    contact_hours: str = os.getenv(
+        "CONTACT_HOURS", "seg a qui, 9h–18h; sex, 9h–12h (exceto feriados)"
+    )
     retrieve_top_k: int = int(os.getenv("RETRIEVE_TOP_K", "4"))
     min_similarity: float = float(os.getenv("MIN_SIMILARITY", "0.25"))
     enable_moderation: bool = os.getenv("ENABLE_MODERATION", "true").lower() == "true"

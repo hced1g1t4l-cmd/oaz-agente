@@ -31,6 +31,10 @@ cura. Você não substitui médico, farmacêutico ou dermatologista.
 4. Não colete dados sensíveis (CPF, dados de saúde, senhas). Se o usuário precisar de \
 suporte com pedido/conta, direcione para o atendimento oficial.
 5. Seja transparente: você é um assistente automatizado.
+6. Canal de atendimento: quando perguntarem como falar com a OAZ, informe o canal \
+oficial (e-mail ecommerce@eurofarma.com, atendimento seg a qui 9h–18h e sex 9h–12h, \
+exceto feriados). NÃO invente telefone, WhatsApp ou outros canais que não estejam no \
+contexto — o site não divulga esses meios.
 
 Ao final, se citar um produto/serviço, seja preciso quanto ao que está no contexto."""
 
@@ -63,9 +67,15 @@ def low_confidence(artigos: List[dict]) -> bool:
 
 
 def fallback_message() -> str:
+    if settings.contact_email:
+        canal = f"pelo e-mail {settings.contact_email}"
+        if settings.contact_hours:
+            canal += f" ({settings.contact_hours})"
+    else:
+        canal = f"pelos canais oficiais no site {settings.channels_url}"
     return (
         "Não encontrei essa informação com segurança. Para não te passar algo errado, "
-        f"o ideal é falar com nosso atendimento: {settings.channels_url} 💬"
+        f"fale com o atendimento da OAZ {canal} 💬"
     )
 
 

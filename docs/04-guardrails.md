@@ -21,10 +21,18 @@ Se a pergunta contém termos como *grávida, criança, alergia, reação, medica
 "posso usar"*, a resposta recebe automaticamente o aviso de que o agente **não
 substitui um profissional de saúde**.
 
-### 3. Baixa confiança → fallback humano
+### 3. Baixa confiança → fallback humano (sem inventar canal)
 Se o melhor resultado do RAG fica abaixo de `MIN_SIMILARITY`, o agente não
-"chuta": responde que não tem a informação com segurança e indica os **canais
-de atendimento** (`CHANNELS_URL`).
+"chuta": responde que não tem a informação com segurança e indica o **canal
+real de atendimento**.
+
+Princípio importante: **o agente só divulga um canal que exista de verdade.** O
+canal oficial da OAZ é o **e-mail `ecommerce@eurofarma.com`** (atendimento seg a
+qui 9h–18h e sex 9h–12h, exceto feriados) — o site **não divulga telefone nem
+WhatsApp**, então o agente nunca inventa esses meios. Isso vem de
+`CONTACT_EMAIL`/`CONTACT_HOURS` e do artigo `canais-atendimento` da base. Se um
+dia não houver canal confirmado, o fallback deve apenas apontar o site, sem
+prometer um meio que não existe.
 
 ### 4. Moderação de entrada
 Bloqueio de padrões claramente indevidos (senha, número de cartão, conteúdo

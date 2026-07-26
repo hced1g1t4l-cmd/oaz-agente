@@ -26,6 +26,9 @@
       mode: "demo", // "demo" | "api"
       backendUrl: "", // endpoint POST no modo api
       channelsUrl: "https://www.oaz.vc", // fallback quando não sabe responder
+      contactEmail: "ecommerce@eurofarma.com", // canal REAL de atendimento
+      contactHours:
+        "seg a qui, 9h–18h; sex, 9h–12h (exceto feriados)", // horário real
       primaryColor: null, // sobrescreve a cor da marca (opcional)
       greeting:
         "Oi! 👋 Sou o assistente virtual da OAZ. Posso te ajudar com produtos, frete, pagamento, trocas e dúvidas do site. Como posso ajudar?",
@@ -474,12 +477,47 @@
   }
 
   function fallbackMsg() {
+    var canal = CFG.contactEmail
+      ? "pelo e-mail " + CFG.contactEmail +
+        (CFG.contactHours ? " (" + CFG.contactHours + ")" : "")
+      : "pelos canais oficiais no site " + CFG.channelsUrl;
     return (
       "Não encontrei essa informação com segurança. Para não te passar algo " +
-      "errado, o ideal é falar com nosso time de atendimento: " +
-      CFG.channelsUrl +
-      " 💬"
+      "errado, fale com o atendimento da OAZ " + canal + " 💬"
     );
+  }
+
+  // resposta pronta sobre o canal de atendimento (fonte da verdade = KB)
+  function supportAnswer() {
+    var art = (window.OAZ_KB || []).filter(function (a) {
+      return a.id === "canais-atendimento";
+    })[0];
+    if (art && art.conteudo) return art.conteudo;
+    // fallback se a KB não tiver o artigo
+    if (CFG.contactEmail) {
+      return (
+        "O atendimento da OAZ é feito por e-mail: " + CFG.contactEmail +
+        (CFG.contactHours ? " (" + CFG.contactHours + ")." : ".")
+      );
+    }
+    return (
+      "Não há um canal de atendimento divulgado que eu possa confirmar. " +
+      "Consulte o site oficial: " + CFG.channelsUrl
+    );
+  }
+
+  var SUPPORT_TERMS = [
+    "atendimento", "atend", "canais", "canal", "fale conosco", "falar com",
+    "contato", "suporte", "sac", "reclama", "email de contato", "e-mail de contato",
+    "telefone", "whatsapp", "como falo", "como entrar em contato", "atendente",
+    "ouvidoria", "central de atend",
+  ];
+
+  function isSupportQuery(q) {
+    var n = normalize(q);
+    return SUPPORT_TERMS.some(function (t) {
+      return n.indexOf(normalize(t)) !== -1;
+    });
   }
 
   function healthDisclaimer() {
@@ -521,7 +559,15 @@
           return;
         }
 
-        // 2) senão, busca o melhor artigo (institucional ou produto específico)
+        // 2) intenção de atendimento -> canal REAL (nunca inventar)
+        if (isSupportQuery(text)) {
+          var sup = supportAnswer();
+          if (health) sup += healthDisclaimer();
+          resolve({ reply: sup, suggestions: categorySuggestions() });
+          return;
+        }
+
+        // 3) senão, busca o melhor artigo (institucional ou produto específico)
         var r = retrieve(text);
         if (!r.best || r.score < CFG.minScore) {
           var msg = fallbackMsg();

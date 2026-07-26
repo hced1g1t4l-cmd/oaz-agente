@@ -112,7 +112,7 @@
         "devolver"
       ],
       "url": "https://www.oaz.vc/institucional/politica-de-privacidade",
-      "conteudo": "Pelo Código de Defesa do Consumidor, você pode desistir da compra em até 7 dias corridos após o recebimento. Para trocas por defeito ou dúvidas de um pedido específico, fale com o atendimento OAZ."
+      "conteudo": "Pelo Código de Defesa do Consumidor, você pode desistir da compra em até 7 dias corridos após o recebimento. Para trocas por defeito ou dúvidas de um pedido específico, escreva para o atendimento OAZ pelo e-mail ecommerce@eurofarma.com."
     },
     {
       "id": "rastreamento",
@@ -129,13 +129,15 @@
         "acompanhar"
       ],
       "url": "https://www.oaz.vc",
-      "conteudo": "Após a confirmação do pagamento e o envio, o código de rastreamento é enviado por e-mail. Para consultar um pedido específico, tenha o número do pedido em mãos e use os canais de atendimento."
+      "conteudo": "Após a confirmação do pagamento e o envio, o código de rastreamento é enviado por e-mail. Para consultar um pedido específico, tenha o número do pedido em mãos e escreva para ecommerce@eurofarma.com (atendimento seg–qui 9h–18h, sex 9h–12h)."
     },
     {
       "id": "canais-atendimento",
       "categoria": "atendimento",
       "titulo": "Canais de atendimento",
       "tags": [
+        "canais",
+        "canal",
         "atendimento",
         "contato",
         "sac",
@@ -143,11 +145,20 @@
         "ajuda",
         "suporte",
         "reclamacao",
+        "email",
+        "e-mail",
         "telefone",
-        "email"
+        "whatsapp",
+        "horario",
+        "fale conosco",
+        "atendente",
+        "como falar",
+        "entrar em contato"
       ],
       "url": "https://www.oaz.vc",
-      "conteudo": "Para falar com uma pessoa do time de atendimento da OAZ — pedidos, pagamentos, trocas ou reclamações — utilize os canais oficiais de atendimento ao consumidor da OAZ/Eurofarma disponíveis no site."
+      "conteudo": "O atendimento ao cliente da OAZ é feito por e-mail: ecommerce@eurofarma.com. O horário de atendimento é de segunda a quinta-feira, das 9h às 18h, e às sextas-feiras, das 9h às 12h (exceto feriados nacionais). O Serviço de Atendimento ao Cliente é prestado pela Eurofarma e pela Drogaria X Farmácia S.A. Não há telefone ou WhatsApp divulgado no site para atendimento; o canal oficial é o e-mail.",
+      "email": "ecommerce@eurofarma.com",
+      "horario": "Segunda a quinta-feira das 9h às 18h; sexta-feira das 9h às 12h (exceto feriados nacionais)."
     },
     {
       "id": "privacidade-lgpd",
