@@ -35,6 +35,53 @@ window.OAZ_CATS = {
 };
 window.OAZ_KB = [
   {
+    "id": "o-que-e-fps",
+    "categoria": "glossario",
+    "titulo": "O que é FPS",
+    "tags": [
+      "fps",
+      "o que e fps",
+      "fator de protecao solar",
+      "spf",
+      "protecao solar",
+      "significa",
+      "protecao uvb"
+    ],
+    "url": "https://www.oaz.vc/protetor-solar",
+    "conteudo": "FPS quer dizer Fator de Proteção Solar. Ele indica o nível de proteção do protetor contra os raios UVB — os principais responsáveis pelas queimaduras solares. Quanto maior o FPS, maior a barreira: FPS 30 filtra cerca de 97% dos raios UVB e FPS 50, cerca de 98%. Nenhum protetor bloqueia 100%. No dia a dia, o ideal é usar FPS 30 ou mais e reaplicar a cada 2 horas (ou depois de suar ou entrar na água). Dica: além do FPS (que mede UVB), procure também proteção UVA no rótulo (indicada pelo PPD), que ajuda contra o envelhecimento e as manchas. Os protetores da OAZ vão de FPS 30 a 70 — se quiser, posso te ajudar a escolher o ideal pra você."
+  },
+  {
+    "id": "uva-uvb",
+    "categoria": "glossario",
+    "titulo": "UVA e UVB (e PPD)",
+    "tags": [
+      "uva",
+      "uvb",
+      "ppd",
+      "raios solares",
+      "amplo espectro",
+      "o que e uva",
+      "diferenca uva uvb"
+    ],
+    "url": "https://www.oaz.vc/protetor-solar",
+    "conteudo": "UVA e UVB são tipos de raios ultravioleta do sol. O UVB atinge a camada mais superficial da pele e causa as queimaduras — é o que o FPS mede. O UVA penetra mais fundo e está ligado ao envelhecimento precoce e às manchas — a proteção contra ele é indicada pelo PPD no rótulo. Um bom protetor é de amplo espectro, ou seja, protege dos dois. Por isso, olhe tanto o FPS quanto o PPD ao escolher."
+  },
+  {
+    "id": "o-que-e-pos-sol",
+    "categoria": "glossario",
+    "titulo": "O que é pós-sol",
+    "tags": [
+      "pos sol",
+      "pos-sol",
+      "o que e pos sol",
+      "depois do sol",
+      "hidratacao pos sol",
+      "prolongar bronzeado"
+    ],
+    "url": "https://www.oaz.vc/pos-sol",
+    "conteudo": "Pós-sol é o cuidado com a pele depois da exposição ao sol. São produtos que hidratam, refrescam e ajudam a acalmar a pele, reduzindo o ressecamento e ajudando a prolongar o bronzeado. A OAZ tem uma linha Pós-Sol pra isso — quer que eu te mostre as opções?"
+  },
+  {
     "id": "sobre-oaz",
     "categoria": "institucional",
     "titulo": "Sobre a OAZ",

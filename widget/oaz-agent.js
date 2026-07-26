@@ -399,8 +399,8 @@
     });
   }
 
-  function retrieve(query) {
-    var kb = window.OAZ_KB || [];
+  function retrieve(query, pool) {
+    var kb = pool || window.OAZ_KB || [];
     var qTokens = tokens(query);
     if (!qTokens.length) return { best: null, score: 0 };
     var scored = kb.map(function (art) {
@@ -745,6 +745,14 @@
     "Sinto muito se algo te deixou frustrado(a). Vou seguir te ajudando com todo o " +
     "respeito — me conta como posso ajudar com a OAZ (produtos, pedidos, frete ou trocas)?";
 
+  // Pergunta conceitual/definição ("o que é FPS", "para que serve", "diferença...")
+  // -> responde com conteúdo educativo (glossário), não com lista de produtos.
+  var DEFINITION_RE =
+    /\b(o que (e|sao|significa|significam|quer dizer)|que (e|significa)|(pra|para) que serve|qual a diferenca|diferenca entre|o que representa|definicao de|o que quer dizer)\b/;
+  function isDefinitionQuery(text) {
+    return DEFINITION_RE.test(normalize(text));
+  }
+
   function questionByFacet(catKey, facet) {
     var qs = WIZARDS[catKey].questions;
     for (var i = 0; i < qs.length; i++) if (qs[i].facet === facet) return qs[i];
@@ -1052,6 +1060,29 @@
         }
 
         var health = isHealthQuery(text);
+
+        // Pergunta conceitual ("o que é FPS?") -> conteúdo educativo, não produtos
+        if (isDefinitionQuery(text)) {
+          var infoPool = (window.OAZ_KB || []).filter(function (a) {
+            return a.categoria !== "produtos";
+          });
+          var rd = retrieve(text, infoPool);
+          if (rd.best && rd.score >= CFG.minScore) {
+            var rep = rd.best.conteudo;
+            if (health) rep += healthDisclaimer();
+            resolve({ reply: rep, suggestions: categorySuggestions() });
+            return;
+          }
+          if (isOffTopic(text)) {
+            resolve({ reply: OFFTOPIC_REPLY, suggestions: categorySuggestions() });
+            return;
+          }
+          var dmsg = fallbackMsg();
+          if (health) dmsg += healthDisclaimer();
+          resolve({ reply: dmsg, suggestions: categorySuggestions() });
+          return;
+        }
+
         var cat = detectCategory(text);
 
         // 1) categoria: se dá pra orientar a escolha, INTERAGE (não só lista)
