@@ -8,7 +8,7 @@
  *       mode: "api",                         // "demo" (sem backend) ou "api"
  *       backendUrl: "https://SEU-BACKEND/chat",
  *       channelsUrl: "https://www.oaz.vc/atendimento",
- *       primaryColor: "#12b0a0"
+ *       primaryColor: "#dbaac9"
  *     };
  *   </script>
  *   <link rel="stylesheet" href="/widget/oaz-agent.css">
