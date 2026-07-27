@@ -758,6 +758,54 @@
     "Sinto muito se algo te deixou frustrado(a). Vou seguir te ajudando com todo o " +
     "respeito — me conta como posso ajudar com a OAZ (produtos, pedidos, frete ou trocas)?";
 
+  // ==== RECLAMAÇÃO / INSATISFAÇÃO -> empatia + canal oficial (CAE Eurofarma) ==
+  var COMPLAINT_RE =
+    /(odiei|detestei|horrivel|pessimo|nao gostei|decepcion|insatisfeit|reclama|quero reclamar|nao funcionou|nao funciona|veio (errad|com defeito|quebrad|estragad|vencid)|com defeito|\bdefeito\b|estragad|vencid|alergia|alergic|me deu alergia|irritou (a )?(minha )?pele|piorou|nao recomendo|frustr|me senti lesad|propaganda enganosa)/;
+  function isComplaint(text) {
+    return COMPLAINT_RE.test(normalize(text));
+  }
+  // Central de Atendimento Eurofarma (CAE) — fonte: eurofarma.com.br
+  var CAE = {
+    fone: "0800 704 3876",
+    email: "euroatende@eurofarma.com",
+    horario: "segunda a sexta, das 8h às 17h",
+  };
+  function complaintReply() {
+    return (
+      "Sinto muito que sua experiência não tenha sido boa 💛 Entendo sua frustração " +
+      "e quero te ajudar a resolver isso. O melhor caminho para registrar sua " +
+      "reclamação e ter um retorno é a Central de Atendimento Eurofarma (CAE):\n\n" +
+      "• Telefone: " + CAE.fone + "\n" +
+      "• E-mail: " + CAE.email + "\n" +
+      "• Horário: " + CAE.horario + "\n\n" +
+      "Se quiser, pode me contar o que aconteceu que eu tento te orientar por aqui também."
+    );
+  }
+
+  // ==== PERGUNTAS SOBRE UM PRODUTO (composição / descrição / como usar) =======
+  var COMPOSITION_RE =
+    /(composicao|ingrediente|ingredientes|\binci\b|do que e feito|o que tem (nesse|no)|componentes|formula|contem o que|tem alcool|tem parabeno)/;
+  function isCompositionQuery(text) {
+    return COMPOSITION_RE.test(normalize(text));
+  }
+  var HOWTO_RE =
+    /(como usar|como aplic|como devo usar|modo de uso|modo de usar|como se usa|quando aplicar|quantas vezes)/;
+  function isHowToUseQuery(text) {
+    return HOWTO_RE.test(normalize(text));
+  }
+  var ABOUT_RE =
+    /(me fala sobre|fala sobre|fale sobre|mais sobre|detalhes|caracteristicas|beneficios|sobre esse produto|me explica esse|para que serve esse|o que e esse produto|ficha do produto)/;
+  function isAboutQuery(text) {
+    return ABOUT_RE.test(normalize(text));
+  }
+
+  // ==== DÚVIDA GENÉRICA SOBRE PRODUTOS (engaja, não cai no fallback) ==========
+  var PRODUCT_HELP_RE =
+    /(duvida|duvidas|ajuda com (os )?produto|saber (mais )?sobre (os )?produto|sobre (os )?produtos|informacao sobre (os )?produto|conhecer os produtos|ver (os )?produtos|quais produtos|que produtos|linha de produtos|catalogo)/;
+  function isProductHelp(text) {
+    return PRODUCT_HELP_RE.test(normalize(text));
+  }
+
   // Pergunta conceitual/definição ("o que é FPS", "para que serve", "diferença...")
   // -> responde com conteúdo educativo (glossário), não com lista de produtos.
   var DEFINITION_RE =
@@ -1152,6 +1200,71 @@
     } catch (e) {}
   }
 
+  // ==== INFORMAÇÃO DE PRODUTO (usa o contexto p/ identificar o item) =========
+  function firstSentences(txt, n) {
+    if (!txt) return "";
+    var s = txt.replace(/\s+/g, " ").trim();
+    var count = 0, buf = "";
+    for (var i = 0; i < s.length; i++) {
+      buf += s[i];
+      if (s[i] === "." && ++count >= n) break;
+    }
+    return buf.trim();
+  }
+  function extractHowTo(desc) {
+    if (!desc) return "";
+    var m = desc.match(/(Como usar|Modo de usar|Modo de uso)\s*:?\s*([\s\S]+)/i);
+    if (!m) return "";
+    // corta no próximo cabeçalho (ex.: "Composição:") se houver
+    return m[2].split(/\n(?=[A-Za-zÀ-ÿ][^\n:]{2,30}:)/)[0].trim();
+  }
+  // identifica o produto pelo texto (match forte) ou pelo contexto (lastProducts)
+  function findProduct(text) {
+    var pool = (window.OAZ_KB || []).filter(function (a) {
+      return a.categoria === "produtos";
+    });
+    var r = retrieve(text, pool);
+    if (r.best && r.score >= 4) return { product: r.best }; // casou bem por nome/tags
+    if (lastProducts && lastProducts.length === 1) return { product: lastProducts[0] };
+    if (lastProducts && lastProducts.length > 1) return { options: lastProducts.slice(0, 6) };
+    if (r.best && r.score >= CFG.minScore) return { product: r.best };
+    return null;
+  }
+  function productInfoAnswer(ctx, intent, health) {
+    if (ctx.options) {
+      return {
+        reply: "Sobre qual produto você quer saber? Me diz qual destes 🙂",
+        suggestions: ctx.options.map(function (p) { return p.titulo; }).slice(0, 4),
+      };
+    }
+    var p = ctx.product;
+    lastProducts = [p];
+    if (p.subcategoria) lastCategory = p.subcategoria;
+    var reply;
+    if (intent === "composicao") {
+      reply = p.composicao
+        ? "A composição do " + p.titulo + " é:\n\n" + p.composicao +
+          "\n\nVeja o produto: " + p.url
+        : "Não tenho a composição do " + p.titulo + " registrada aqui. A lista " +
+          "completa fica na página do produto: " + p.url;
+    } else if (intent === "como") {
+      var como = extractHowTo(p.descricao);
+      reply = (como
+        ? "Como usar o " + p.titulo + ":\n\n" + como
+        : "O modo de uso do " + p.titulo + " está detalhado na página do produto.") +
+        "\n\nVeja o produto: " + p.url;
+    } else {
+      var d = firstSentences(p.descricao, 3) || p.conteudo;
+      reply = p.titulo + (p.preco ? " — " + p.preco : "") + "\n\n" + d +
+        "\n\nVeja o produto: " + p.url;
+    }
+    if (health) reply += healthDisclaimer();
+    return {
+      reply: reply,
+      suggestions: ["Quais os preços?", "Me ajude a escolher", "Falar com atendimento"],
+    };
+  }
+
   function answerViaDemo(text) {
     return new Promise(function (resolve) {
       // latência simulada para parecer natural
@@ -1178,6 +1291,34 @@
         }
 
         var health = isHealthQuery(text);
+
+        // Reclamação/insatisfação -> empatia + canal oficial (CAE Eurofarma)
+        if (isComplaint(text)) {
+          var crep = complaintReply();
+          if (health) crep += healthDisclaimer();
+          resolve({
+            reply: crep,
+            suggestions: ["Falar com atendimento", "Ver produtos", "Trocas e devoluções"],
+          });
+          return;
+        }
+
+        // Pergunta sobre um produto específico (composição/descrição/como usar)
+        var infoIntent = isCompositionQuery(text)
+          ? "composicao"
+          : isHowToUseQuery(text)
+          ? "como"
+          : isAboutQuery(text)
+          ? "sobre"
+          : null;
+        if (infoIntent) {
+          var pctx = findProduct(text);
+          if (pctx) {
+            resolve(productInfoAnswer(pctx, infoIntent, health));
+            return;
+          }
+          // sem produto identificável -> segue o roteamento normal (categoria/etc.)
+        }
 
         // Pergunta conceitual ("o que é FPS?") -> conteúdo educativo, não produtos
         if (isDefinitionQuery(text)) {
@@ -1252,6 +1393,18 @@
         // 2b) pediu ajuda p/ escolher sem citar a categoria -> usa a última
         if (isAdviceQuery(text) && lastCategory && WIZARDS[lastCategory]) {
           resolve(startWizard(lastCategory, text));
+          return;
+        }
+
+        // 2c) dúvida genérica sobre produtos -> ENGAJA (não cai no fallback)
+        if (isProductHelp(text)) {
+          resolve({
+            reply:
+              "Claro, posso te ajudar com os produtos da OAZ! 😊 Me conta o que você " +
+              "procura — posso mostrar as categorias, tirar dúvidas de composição, " +
+              "indicar o ideal pra você ou passar os preços. Por onde começamos?",
+            suggestions: categorySuggestions(),
+          });
           return;
         }
 

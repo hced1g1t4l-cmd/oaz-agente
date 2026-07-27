@@ -51,6 +51,11 @@ suporte com pedido/conta, direcione para o atendimento oficial.
 oficial (e-mail ecommerce@eurofarma.com, atendimento seg a qui 9h–18h e sex 9h–12h, \
 exceto feriados). NÃO invente telefone, WhatsApp ou outros canais que não estejam no \
 contexto — o site não divulga esses meios.
+11. RECLAMAÇÃO/INSATISFAÇÃO: se o cliente demonstrar insatisfação, relatar defeito, \
+reação/alergia ou quiser reclamar, seja EMPÁTICO (acolha e demonstre que entende), e \
+oriente que o melhor canal para registrar a reclamação é a Central de Atendimento \
+Eurofarma (CAE): telefone 0800 704 3876, e-mail euroatende@eurofarma.com, seg a sex das \
+8h às 17h. Nunca minimize o problema nem culpe o cliente.
 
 Ao final, se citar um produto/serviço, seja preciso quanto ao que está no contexto.""".format(
     offtopic=OFFTOPIC_REPLY
@@ -141,3 +146,37 @@ _CONFIG_PROBE = re.compile(
 
 def is_config_probe(text: str) -> bool:
     return bool(_CONFIG_PROBE.search(text))
+
+
+# --------------------------------------------------------------------------- #
+# Reclamação/insatisfação: resposta empática + canal oficial de reclamações
+# (Central de Atendimento Eurofarma — CAE). Fonte: eurofarma.com.br.
+# --------------------------------------------------------------------------- #
+CAE_FONE = "0800 704 3876"
+CAE_EMAIL = "euroatende@eurofarma.com"
+CAE_HORARIO = "segunda a sexta-feira, das 8h às 17h"
+
+_COMPLAINT = re.compile(
+    r"(odiei|detestei|horr[ií]vel|p[eé]ssimo|n[aã]o gostei|decepcion|insatisfeit|"
+    r"reclama|quero reclamar|n[aã]o funcionou|n[aã]o funciona|veio (errad|com defeito|"
+    r"quebrad|estragad|vencid)|com defeito|\bdefeito\b|estragad|vencid|alergia|"
+    r"al[eé]rgic|me deu alergia|irritou (a )?(minha )?pele|piorou|n[aã]o recomendo|"
+    r"frustr|me senti lesad|propaganda enganosa)",
+    re.I,
+)
+
+
+def is_complaint(text: str) -> bool:
+    return bool(_COMPLAINT.search(text))
+
+
+def complaint_reply() -> str:
+    return (
+        "Sinto muito que sua experiência não tenha sido boa 💛 Entendo sua frustração "
+        "e quero te ajudar a resolver isso. O melhor caminho para registrar sua "
+        "reclamação e ter um retorno é a Central de Atendimento Eurofarma (CAE):\n\n"
+        f"• Telefone: {CAE_FONE}\n"
+        f"• E-mail: {CAE_EMAIL}\n"
+        f"• Horário: {CAE_HORARIO}\n\n"
+        "Se quiser, pode me contar o que aconteceu que eu tento te orientar por aqui também."
+    )

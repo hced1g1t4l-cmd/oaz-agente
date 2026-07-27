@@ -64,6 +64,11 @@ async def answer(message: str, history: List[dict]) -> ChatResponse:
     if guardrails.is_config_probe(message):
         return ChatResponse(reply=guardrails.CONFIG_PROBE_REPLY)
 
+    # 1c) Reclamação/insatisfação -> empatia + canal oficial (CAE Eurofarma)
+    if guardrails.is_complaint(message):
+        reply = guardrails.apply_output_guardrails(guardrails.complaint_reply(), message)
+        return ChatResponse(reply=reply)
+
     # 2) cache semântico (segura volume)
     hit = await cache.get(message)
     if hit:

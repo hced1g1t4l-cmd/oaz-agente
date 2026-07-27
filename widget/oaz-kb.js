@@ -206,6 +206,34 @@ window.OAZ_KB = [
     "horario": "Segunda a quinta-feira das 9h às 18h; sexta-feira das 9h às 12h (exceto feriados nacionais)."
   },
   {
+    "id": "reclamacoes-cae",
+    "categoria": "atendimento",
+    "titulo": "Reclamações e Central de Atendimento Eurofarma (CAE)",
+    "tags": [
+      "reclamacao",
+      "reclamacoes",
+      "reclamar",
+      "insatisfeito",
+      "insatisfacao",
+      "defeito",
+      "alergia",
+      "reacao",
+      "problema com produto",
+      "cae",
+      "central de atendimento",
+      "euroatende",
+      "0800",
+      "ouvidoria",
+      "nao gostei",
+      "devolver"
+    ],
+    "url": "https://www.eurofarma.com.br",
+    "conteudo": "Para registrar uma reclamação, relatar um problema, defeito, reação/alergia ou insatisfação com um produto, o canal oficial é a Central de Atendimento Eurofarma (CAE): telefone 0800 704 3876; e-mail euroatende@eurofarma.com; atendimento de segunda a sexta-feira, das 8h às 17h. Acolha o cliente com empatia antes de encaminhar.",
+    "email": "euroatende@eurofarma.com",
+    "telefone": "0800 704 3876",
+    "horario": "Segunda a sexta-feira, das 8h às 17h."
+  },
+  {
     "id": "privacidade-lgpd",
     "categoria": "institucional",
     "titulo": "Privacidade e proteção de dados (LGPD)",
@@ -237,7 +265,8 @@ window.OAZ_KB = [
       "pos",
       "repelente"
     ],
-    "conteudo": "Pos Picada Gel 15ML. Preço: R$ 16,99. OAZ Gel Pós-Picada de Insetos alivia a coceira e o desconforto causados por picadas. Sua fórmula calmante e hidratante é rapidamente absorvida, sem causar ardência. Hipoalergênico e dermatologicamente testado."
+    "conteudo": "Pos Picada Gel 15ML. Preço: R$ 16,99. OAZ Gel Pós-Picada de Insetos alivia a coceira e o desconforto causados por picadas. Sua fórmula calmante e hidratante é rapidamente absorvida, sem causar ardência. Hipoalergênico e dermatologicamente testado.",
+    "descricao": "OAZ Gel Pós-Picada de Insetos alivia a coceira e o desconforto causados por picadas. Sua fórmula calmante e hidratante é rapidamente absorvida, sem causar ardência. Hipoalergênico e dermatologicamente testado."
   },
   {
     "id": "prod-25830",
@@ -260,7 +289,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Facial FPS 50 40G. Preço: R$ 37,99. Protetor solar facial FPS 50 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário."
+    "conteudo": "Protetor Solar Facial FPS 50 40G. Preço: R$ 37,99. Protetor solar facial FPS 50 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário. Composição: Ácido Hialurônico, Biossacarídeos, Vitamina E e Niacinamida.",
+    "descricao": "Protetor solar facial FPS 50 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário.",
+    "composicao": "Ácido Hialurônico, Biossacarídeos, Vitamina E e Niacinamida"
   },
   {
     "id": "prod-37456",
@@ -284,7 +315,8 @@ window.OAZ_KB = [
       "sol",
       "spray"
     ],
-    "conteudo": "Protetor Capilar Spray Sol&Calor Leave-In OAZ 120ml. Preço: R$ 36,00. O Protetor Capilar Spray Sol & Calor Leave-In OAZ foi desenvolvido para ser um grande aliado na sua rotina de autocuidado. Com a qualidade da Eurofarma, ele ajuda a proteger os cabelos contra os danos causados pela exposição ao sol, mar, piscina e ao calor de equipamentos mecânicos (secador e chapin"
+    "conteudo": "Protetor Capilar Spray Sol&Calor Leave-In OAZ 120ml. Preço: R$ 36,00. O Protetor Capilar Spray Sol & Calor Leave-In OAZ foi desenvolvido para ser um grande aliado na sua rotina de autocuidado. Com a qualidade da Eurofarma, ele ajuda a proteger os cabelos contra os danos causados pela exposição ao sol, mar, piscina e ao calor de equipamentos mecânicos (secador e chapinha). Seu formato em spray proporciona uma aplicação leve e prática, facilitando o uso em diferentes momentos do seu dia, sem pesar os fios. Cuidar de você, do seu jeito. Principais benefícios : • Dupla proteção: Oferece proteção solar e proteção térmica, auxiliando na redução dos danos provocados pela radiação UV e por ferramentas de calor. • Ação hidratante: Com Extrato de Coco em sua composição, ajuda a combater o ressecamento, contribuindo para a manutenção da hidratação natural dos fios expostos ao cloro e ao sal. • Controle do frizz: O uso adequado do produto auxilia no alinhamento capilar, ajudando a reduzir o aspecto de frizz e disciplinando o cabelo. • Brilho e maciez: Proporciona nutrientes que colaboram para fios mais macios ao toque e com aparência saudável. • Acessibilidade com qualidade: Uma opção de excelente custo-benefício para incluir o cuidado capilar na sua rotina. Como Usar : Borrife o spray de maneira uniforme sobre os cabelos úmidos ou secos, antes de se expor ao sol, ao mar, à piscina ou antes de usar ferramentas de calor. Produto sem enxágue. Para manter a eficácia da proteção, recomendamos reaplicar o produto sempre após mergulhos prolongados ou transpiração intensa.",
+    "descricao": "O Protetor Capilar Spray Sol & Calor Leave-In OAZ foi desenvolvido para ser um grande aliado na sua rotina de autocuidado.\nCom a qualidade da Eurofarma, ele ajuda a proteger os cabelos contra os danos causados pela exposição ao sol, mar, piscina e ao calor de equipamentos mecânicos (secador e chapinha).\nSeu formato em spray proporciona uma aplicação leve e prática, facilitando o uso em diferentes momentos do seu dia, sem pesar os fios. Cuidar de você, do seu jeito.\nPrincipais benefícios :\n• Dupla proteção: Oferece proteção solar e proteção térmica, auxiliando na redução dos danos provocados pela radiação UV e por ferramentas de calor.\n• Ação hidratante: Com Extrato de Coco em sua composição, ajuda a combater o ressecamento, contribuindo para a manutenção da hidratação natural dos fios expostos ao cloro e ao sal.\n• Controle do frizz: O uso adequado do produto auxilia no alinhamento capilar, ajudando a reduzir o aspecto de frizz e disciplinando o cabelo.\n• Brilho e maciez: Proporciona nutrientes que colaboram para fios mais macios ao toque e com aparência saudável.\n• Acessibilidade com qualidade: Uma opção de excelente custo-benefício para incluir o cuidado capilar na sua rotina.\nComo Usar : Borrife o spray de maneira uniforme sobre os cabelos úmidos ou secos, antes de se expor ao sol, ao mar, à piscina ou antes de usar ferramentas de calor. Produto sem enxágue. Para manter a eficácia da proteção, recomendamos reaplicar o produto sempre após mergulhos prolongados ou transpiração intensa."
   },
   {
     "id": "prod-37475",
@@ -305,7 +337,8 @@ window.OAZ_KB = [
       "solar",
       "stick"
     ],
-    "conteudo": "OAZ PROTETOR SOLAR STICK COR 4. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios Muito alta proteção UVA/UVB, com FPS 70 Uniformização da pele P"
+    "conteudo": "OAZ PROTETOR SOLAR STICK COR 4. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios : • Muito alta proteção UVA/UVB, com FPS 70 • Uniformização da pele • Para todos os tipos de pele • Toque seco • Hidratação • Efeito matte • Resistente à água e ao suor • Hipoalergênico • Não comedogênico • Não acnogênico Como usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação.",
+    "descricao": "OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades.\nPrincipais benefícios :\n• Muito alta proteção UVA/UVB, com FPS 70\n• Uniformização da pele\n• Para todos os tipos de pele\n• Toque seco\n• Hidratação\n• Efeito matte\n• Resistente à água e ao suor\n• Hipoalergênico\n• Não comedogênico\n• Não acnogênico\nComo usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação."
   },
   {
     "id": "prod-37474",
@@ -326,7 +359,8 @@ window.OAZ_KB = [
       "solar",
       "stick"
     ],
-    "conteudo": "OAZ PROTETOR SOLAR STICK COR 3. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios Muito alta proteção UVA/UVB, com FPS 70 Uniformização da pele P"
+    "conteudo": "OAZ PROTETOR SOLAR STICK COR 3. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios : • Muito alta proteção UVA/UVB, com FPS 70 • Uniformização da pele • Para todos os tipos de pele • Toque seco • Hidratação • Efeito matte • Resistente à água e ao suor • Hipoalergênico • Não comedogênico • Não acnogênico Como usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação.",
+    "descricao": "OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades.\nPrincipais benefícios :\n• Muito alta proteção UVA/UVB, com FPS 70\n• Uniformização da pele\n• Para todos os tipos de pele\n• Toque seco\n• Hidratação\n• Efeito matte\n• Resistente à água e ao suor\n• Hipoalergênico\n• Não comedogênico\n• Não acnogênico\nComo usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação."
   },
   {
     "id": "prod-37473",
@@ -347,7 +381,8 @@ window.OAZ_KB = [
       "solar",
       "stick"
     ],
-    "conteudo": "OAZ PROTETOR SOLAR STICK COR 2. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios Muito alta proteção UVA/UVB, com FPS 70 Uniformização da pele P"
+    "conteudo": "OAZ PROTETOR SOLAR STICK COR 2. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios : • Muito alta proteção UVA/UVB, com FPS 70 • Uniformização da pele • Para todos os tipos de pele • Toque seco • Hidratação • Efeito matte • Resistente à água e ao suor • Hipoalergênico • Não comedogênico • Não acnogênico Como usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação.",
+    "descricao": "OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades.\nPrincipais benefícios :\n• Muito alta proteção UVA/UVB, com FPS 70\n• Uniformização da pele\n• Para todos os tipos de pele\n• Toque seco\n• Hidratação\n• Efeito matte\n• Resistente à água e ao suor\n• Hipoalergênico\n• Não comedogênico\n• Não acnogênico\nComo usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação."
   },
   {
     "id": "prod-37472",
@@ -368,7 +403,8 @@ window.OAZ_KB = [
       "solar",
       "stick"
     ],
-    "conteudo": "OAZ PROTETOR SOLAR STICK COR 1. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios Muito alta proteção UVA/UVB, com FPS 70 Uniformização da pele P"
+    "conteudo": "OAZ PROTETOR SOLAR STICK COR 1. Preço: R$ 96,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios : • Muito alta proteção UVA/UVB, com FPS 70 • Uniformização da pele • Para todos os tipos de pele • Toque seco • Hidratação • Efeito matte • Resistente à água e ao suor • Hipoalergênico • Não comedogênico • Não acnogênico Como usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação.",
+    "descricao": "OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades.\nPrincipais benefícios :\n• Muito alta proteção UVA/UVB, com FPS 70\n• Uniformização da pele\n• Para todos os tipos de pele\n• Toque seco\n• Hidratação\n• Efeito matte\n• Resistente à água e ao suor\n• Hipoalergênico\n• Não comedogênico\n• Não acnogênico\nComo usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação."
   },
   {
     "id": "prod-37471",
@@ -389,7 +425,8 @@ window.OAZ_KB = [
       "solar",
       "stick"
     ],
-    "conteudo": "OAZ PROTETOR SOLAR STICK INCOLOR. Preço: R$ 90,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios Muito alta proteção UVA/UVB, com FPS 70 Uniformização da pele P"
+    "conteudo": "OAZ PROTETOR SOLAR STICK INCOLOR. Preço: R$ 90,00. OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades. Principais benefícios : • Muito alta proteção UVA/UVB, com FPS 70 • Uniformização da pele • Para todos os tipos de pele • Toque seco • Hidratação • Efeito matte • Resistente à água e ao suor • Hipoalergênico • Não comedogênico • Não acnogênico Como usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação.",
+    "descricao": "OAZ Protetor Solar Stick Facial - Proteção muito alta UVA/UVB em um formato que acompanha o dia a dia. Precisão na aplicação e praticidade na rotina. Com Vitamina E, disponível na versão incolor e em 4 tonalidades.\nPrincipais benefícios :\n• Muito alta proteção UVA/UVB, com FPS 70\n• Uniformização da pele\n• Para todos os tipos de pele\n• Toque seco\n• Hidratação\n• Efeito matte\n• Resistente à água e ao suor\n• Hipoalergênico\n• Não comedogênico\n• Não acnogênico\nComo usar : Modo de usar: aplique abundantemente antes da exposição ao sol. É necessária a reaplicação do produto para manter a sua efetividade. Reaplique sempre após sudorese intensa, nadar, banhar-se, secar-se com toalha e durante a exposição ao sol. Evite exposição prolongada das crianças ao sol. Este produto não oferece nenhuma proteção contra insolação."
   },
   {
     "id": "prod-37468",
@@ -412,7 +449,8 @@ window.OAZ_KB = [
       "necessaire",
       "oaz"
     ],
-    "conteudo": "Necessaire OAZ \"A felicidade esta no (a)mar - Brinde exclusivo. Preço: R$ 0,01. Brinde exclusivo mês do consumidor: Necessaire OAZ \"A felicidade esta no (a)mar\""
+    "conteudo": "Necessaire OAZ \"A felicidade esta no (a)mar - Brinde exclusivo. Preço: R$ 0,01. Brinde exclusivo mês do consumidor: Necessaire OAZ \"A felicidade esta no (a)mar\".",
+    "descricao": "Brinde exclusivo mês do consumidor: Necessaire OAZ \"A felicidade esta no (a)mar\""
   },
   {
     "id": "prod-37467",
@@ -435,7 +473,9 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 4. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 4 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 4 proporciona cobertura u"
+    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 4. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 4 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 4 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "O OAZ Protetor Facial FPS 70 Cor 4 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem.\nA versão Cor 4 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-37466",
@@ -458,7 +498,9 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 3. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 3 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 3 proporciona cobertura u"
+    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 3. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 3 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 3 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "O OAZ Protetor Facial FPS 70 Cor 3 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem.\nA versão Cor 3 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-37463",
@@ -481,7 +523,9 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 2. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 2 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem A versão Cor 2 proporciona cobertura un"
+    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 2. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 2 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem A versão Cor 2 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "O OAZ Protetor Facial FPS 70 Cor 2 oferece alta proteção diária contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem\nA versão Cor 2 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e no disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-37459",
@@ -504,7 +548,9 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 1. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 1 proporciona cobertura "
+    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 1. Preço: R$ 57,43. O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. A versão Cor 1 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e na disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso. :. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem.\nA versão Cor 1 proporciona cobertura uniforme e natural, auxiliando na uniformização do tom da pele e na disfarce de pequenas imperfeições, sem deixar aspecto pesado ou oleoso.\n:",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-37457",
@@ -528,7 +574,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "KIT OAZ PROT SOLAR 70FPS 200ML+40ML. Preço: R$ 69,00. OAZ Kit Protetor Solar FPS 70 – 200ml + 40ml O OAZ Kit Protetor Solar FPS 70 oferece alta proteção contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Ideal para uso diário e exposição intensa ao sol, sua fórmula proporciona proteção eficaz"
+    "conteudo": "KIT OAZ PROT SOLAR 70FPS 200ML+40ML. Preço: R$ 69,00. OAZ Kit Protetor Solar FPS 70 – 200ml + 40ml O OAZ Kit Protetor Solar FPS 70 oferece alta proteção contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Ideal para uso diário e exposição intensa ao sol, sua fórmula proporciona proteção eficaz com toque leve e rápida absorção. O kit contém: • 1 Protetor Solar FPS 70 – 200ml (tamanho regular) • 1 Protetor Solar FPS 70 – 40ml (tamanho prático para levar na bolsa ou viagens) Benefícios: • Alta proteção FPS 70 • Proteção contra raios UVA e UVB • Textura leve e fácil de espalhar • Rápida absorção • Ideal para todos os tipos de pele Perfeito para manter a pele protegida em todos os momentos, seja no dia a dia, na praia ou durante atividades ao ar livre. Composição: Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Ethylhexyl Methoxycinnamate, Parfum, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, BHT, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "OAZ Kit Protetor Solar FPS 70 – 200ml + 40ml\nO OAZ Kit Protetor Solar FPS 70 oferece alta proteção contra os raios UVA e UVB, ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Ideal para uso diário e exposição intensa ao sol, sua fórmula proporciona proteção eficaz com toque leve e rápida absorção.\nO kit contém:\n• 1 Protetor Solar FPS 70 – 200ml (tamanho regular)\n• 1 Protetor Solar FPS 70 – 40ml (tamanho prático para levar na bolsa ou viagens)\nBenefícios:\n• Alta proteção FPS 70\n• Proteção contra raios UVA e UVB\n• Textura leve e fácil de espalhar\n• Rápida absorção\n• Ideal para todos os tipos de pele\nPerfeito para manter a pele protegida em todos os momentos, seja no dia a dia, na praia ou durante atividades ao ar livre.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Ethylhexyl Methoxycinnamate, Parfum, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, BHT, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-37455",
@@ -551,7 +599,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "sol"
     ],
-    "conteudo": "Protetor Capilar Creme Sol&Calor Leave-In  120ml. Preço: R$ 35,00. O protetor capilar creme da linha Sol & Calor, desenvolvido com a chancela da Eurofarma, atua como uma barreira suave que ajuda a minimizar os impactos causados por ferramentas térmicas (secador e chapinha), exposição solar e contato com a água da piscina ou do mar. Sua formulação em creme favorece "
+    "conteudo": "Protetor Capilar Creme Sol&Calor Leave-In  120ml. Preço: R$ 35,00. O protetor capilar creme da linha Sol & Calor, desenvolvido com a chancela da Eurofarma, atua como uma barreira suave que ajuda a minimizar os impactos causados por ferramentas térmicas (secador e chapinha), exposição solar e contato com a água da piscina ou do mar. Sua formulação em creme favorece um condicionamento mais profundo, facilitando o desembaraço e entregando uma rotina de cuidados focada na prevenção de danos, sem abrir mão da economia. Cuidar de você, do seu jeito. Principais benefícios : • Defesa térmica e solar: atua diminuindo o desgaste do cabelo frente ao uso de secadores e babyliss, além de ajudar a filtrar os danos da exposição direta ao sol. • Condicionamento contínuo: a presença do extrato de coco ajuda a reter a umidade na fibra capilar, o que favorece um aspecto mais macio e bem cuidado ao longo das horas. • Ação disciplinante: contribui para que os fios fiquem mais maleáveis, o que auxilia no momento de pentear e colabora para a redução de fios arrepiados. • Toque sedoso: fornece ativos que melhoram a textura do cabelo, ajudando a deixá-lo com um aspecto mais suave e luminoso. • Custo-benefício inteligente: uma opção que democratiza o acesso a soluções de farmácia para a sua rotina de beleza. Como usar : Distribua uma pequena quantidade do creme nas mãos e aplique ao longo dos fios úmidos ou secos, concentrando no comprimento e nas pontas. Use antes de secar os cabelos com calor ou antes de atividades ao ar livre. Não é preciso enxaguar. Após o contato prolongado com a água do mar ou cloro, sugere-se uma nova aplicação para reforçar a proteção capilar.",
+    "descricao": "O protetor capilar creme da linha Sol & Calor, desenvolvido com a chancela da Eurofarma, atua como uma barreira suave que ajuda a minimizar os impactos causados por ferramentas térmicas (secador e chapinha), exposição solar e contato com a água da piscina ou do mar.\nSua formulação em creme favorece um condicionamento mais profundo, facilitando o desembaraço e entregando uma rotina de cuidados focada na prevenção de danos, sem abrir mão da economia. Cuidar de você, do seu jeito.\nPrincipais benefícios :\n• Defesa térmica e solar: atua diminuindo o desgaste do cabelo frente ao uso de secadores e babyliss, além de ajudar a filtrar os danos da exposição direta ao sol.\n• Condicionamento contínuo: a presença do extrato de coco ajuda a reter a umidade na fibra capilar, o que favorece um aspecto mais macio e bem cuidado ao longo das horas.\n• Ação disciplinante: contribui para que os fios fiquem mais maleáveis, o que auxilia no momento de pentear e colabora para a redução de fios arrepiados.\n• Toque sedoso: fornece ativos que melhoram a textura do cabelo, ajudando a deixá-lo com um aspecto mais suave e luminoso.\n• Custo-benefício inteligente: uma opção que democratiza o acesso a soluções de farmácia para a sua rotina de beleza.\nComo usar : Distribua uma pequena quantidade do creme nas mãos e aplique ao longo dos fios úmidos ou secos, concentrando no comprimento e nas pontas. Use antes de secar os cabelos com calor ou antes de atividades ao ar livre.\nNão é preciso enxaguar. Após o contato prolongado com a água do mar ou cloro, sugere-se uma nova aplicação para reforçar a proteção capilar."
   },
   {
     "id": "prod-25831",
@@ -574,7 +623,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Facial FPS 70 40G. Preço: R$ 48,99. Protetor solar facial FPS 70 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário."
+    "conteudo": "Protetor Solar Facial FPS 70 40G. Preço: R$ 48,99. Protetor solar facial FPS 70 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário. Composição: Ácido Hialurônico, Biossacarídeos, Vitamina E e Niacinamida.",
+    "descricao": "Protetor solar facial FPS 70 com ação hidratante, antioxidante e anti-idade. Oferece toque seco, firmeza e viço à pele, além de ser resistente à água e ao suor. Com Niacinamida, Vitamina E, Ácido Hialurônico e Biossacarídeos, é dermatologicamente testado e ideal para uso diário.",
+    "composicao": "Ácido Hialurônico, Biossacarídeos, Vitamina E e Niacinamida"
   },
   {
     "id": "prod-25726",
@@ -592,7 +643,8 @@ window.OAZ_KB = [
       "aerossol",
       "repelente"
     ],
-    "conteudo": "Repelente Aerossol 200ml. Preço: R$ 23,90. Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 7,5% de DEET, não é oleosa e proporciona hidratação para a pele."
+    "conteudo": "Repelente Aerossol 200ml. Preço: R$ 23,90. Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 7,5% de DEET, não é oleosa e proporciona hidratação para a pele.",
+    "descricao": "Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 7,5% de DEET, não é oleosa e proporciona hidratação para a pele."
   },
   {
     "id": "prod-25322",
@@ -617,7 +669,8 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "Kit Família Protetor FPS 50 200ML + Protetor Infantil FPS 60 125ML. Preço: R$ 70,99. Kit promocional com 1 protetor solar FPS 50 200ml + 1 protetor kids bob esponja FPS 60 125ml"
+    "conteudo": "Kit Família Protetor FPS 50 200ML + Protetor Infantil FPS 60 125ML. Preço: R$ 70,99. Kit promocional com 1 protetor solar FPS 50 200ml + 1 protetor kids bob esponja FPS 60 125ml.",
+    "descricao": "Kit promocional com 1 protetor solar FPS 50 200ml + 1 protetor kids bob esponja FPS 60 125ml"
   },
   {
     "id": "prod-24825",
@@ -636,7 +689,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "proteção"
     ],
-    "conteudo": "Kit Proteção Aerossol. Preço: R$ 69,99. Kit \"Proteção Aerossol\" OAZ, que inclui 1 unidade do Protetor Solar Aerossol OAZ FPS 30 200ml e 1 unidade do Pós-Sol Aerossol OAZ 200ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação pós-sol em formatos práticos e de fácil aplicação, ideais para quem busca praticidade e efi"
+    "conteudo": "Kit Proteção Aerossol. Preço: R$ 69,99. Kit \"Proteção Aerossol\" OAZ, que inclui 1 unidade do Protetor Solar Aerossol OAZ FPS 30 200ml e 1 unidade do Pós-Sol Aerossol OAZ 200ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação pós-sol em formatos práticos e de fácil aplicação, ideais para quem busca praticidade e eficiência no dia a dia, na praia ou na piscina.",
+    "descricao": "Kit \"Proteção Aerossol\" OAZ, que inclui 1 unidade do Protetor Solar Aerossol OAZ FPS 30 200ml e 1 unidade do Pós-Sol Aerossol OAZ 200ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação pós-sol em formatos práticos e de fácil aplicação, ideais para quem busca praticidade e eficiência no dia a dia, na praia ou na piscina."
   },
   {
     "id": "prod-24821",
@@ -656,7 +710,8 @@ window.OAZ_KB = [
       "proteção",
       "repelente"
     ],
-    "conteudo": "Kit Proteção e Repelente Infantil. Preço: R$ 51,99. Kit \"Proteção e Repelente Kids\" Bob Esponja, que inclui 1 unidade do Protetor Solar Kids Bob Esponja FPS 60 125ml e 1 unidade do Repelente Kids Bob Esponja 100ml. Desenvolvido especialmente para crianças, este kit oferece proteção solar de alta eficiência e defesa contra insetos de forma divertida e"
+    "conteudo": "Kit Proteção e Repelente Infantil. Preço: R$ 51,99. Kit \"Proteção e Repelente Kids\" Bob Esponja, que inclui 1 unidade do Protetor Solar Kids Bob Esponja FPS 60 125ml e 1 unidade do Repelente Kids Bob Esponja 100ml. Desenvolvido especialmente para crianças, este kit oferece proteção solar de alta eficiência e defesa contra insetos de forma divertida e segura, garantindo que os pequenos possam brincar ao ar livre com tranquilidade.",
+    "descricao": "Kit \"Proteção e Repelente Kids\" Bob Esponja, que inclui 1 unidade do Protetor Solar Kids Bob Esponja FPS 60 125ml e 1 unidade do Repelente Kids Bob Esponja 100ml. Desenvolvido especialmente para crianças, este kit oferece proteção solar de alta eficiência e defesa contra insetos de forma divertida e segura, garantindo que os pequenos possam brincar ao ar livre com tranquilidade."
   },
   {
     "id": "prod-24818",
@@ -676,7 +731,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "proteção"
     ],
-    "conteudo": "Kit Proteção + Creme Labial. Preço: R$ 42,99. Kit \"Proteção + Creme Labial\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 50 200ml e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação labial, garantindo cuidados completos para você aproveitar o sol com segurança e confor"
+    "conteudo": "Kit Proteção + Creme Labial. Preço: R$ 42,99. Kit \"Proteção + Creme Labial\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 50 200ml e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação labial, garantindo cuidados completos para você aproveitar o sol com segurança e conforto.",
+    "descricao": "Kit \"Proteção + Creme Labial\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 50 200ml e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de proteção solar e hidratação labial, garantindo cuidados completos para você aproveitar o sol com segurança e conforto."
   },
   {
     "id": "prod-24817",
@@ -695,7 +751,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "proteção"
     ],
-    "conteudo": "Kit Proteção Adulto. Preço: R$ 39,99. Kit \"Proteção Adulto\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 30 200ml e 1 unidade do Pós-Sol Gel OAZ 120ml. Este kit foi desenvolvido para oferecer uma rotina completa de proteção e cuidados pós-sol, garantindo que sua pele esteja sempre hidratada, protegida e saudável, seja na praia, n"
+    "conteudo": "Kit Proteção Adulto. Preço: R$ 39,99. Kit \"Proteção Adulto\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 30 200ml e 1 unidade do Pós-Sol Gel OAZ 120ml. Este kit foi desenvolvido para oferecer uma rotina completa de proteção e cuidados pós-sol, garantindo que sua pele esteja sempre hidratada, protegida e saudável, seja na praia, na piscina ou no dia a dia.",
+    "descricao": "Kit \"Proteção Adulto\" OAZ, que inclui 1 unidade do Protetor Solar OAZ FPS 30 200ml e 1 unidade do Pós-Sol Gel OAZ 120ml. Este kit foi desenvolvido para oferecer uma rotina completa de proteção e cuidados pós-sol, garantindo que sua pele esteja sempre hidratada, protegida e saudável, seja na praia, na piscina ou no dia a dia."
   },
   {
     "id": "prod-16916",
@@ -717,7 +774,8 @@ window.OAZ_KB = [
       "sortidas",
       "ultra"
     ],
-    "conteudo": "Escova Dental ULTRA MAX Cores Sortidas. Preço: R$ 12,99. Com cerdas macias e ultrafinas, nossa escova Ultra Max proporciona uma limpeza mais confortável e eficiente quando comparada a escovas de dente tradicionais. Ela possui o formato ideal para a limpeza completa de gengivas e dentes e está disponível em 4 cores. Cores Sortidas: ( LARANJA, CINZA, VERDE,"
+    "conteudo": "Escova Dental ULTRA MAX Cores Sortidas. Preço: R$ 12,99. Com cerdas macias e ultrafinas, nossa escova Ultra Max proporciona uma limpeza mais confortável e eficiente quando comparada a escovas de dente tradicionais. Ela possui o formato ideal para a limpeza completa de gengivas e dentes e está disponível em 4 cores. Cores Sortidas: ( LARANJA, CINZA, VERDE, AZUL).",
+    "descricao": "Com cerdas macias e ultrafinas, nossa escova Ultra Max proporciona uma limpeza mais confortável e eficiente quando comparada a escovas de dente tradicionais. Ela possui o formato ideal para a limpeza completa de gengivas e dentes e está disponível em 4 cores.\nCores Sortidas: ( LARANJA, CINZA, VERDE, AZUL)"
   },
   {
     "id": "prod-16911",
@@ -739,7 +797,8 @@ window.OAZ_KB = [
       "pro",
       "variadas"
     ],
-    "conteudo": "Escova Dental Gengiva PRO Cores Variadas. Preço: R$ 10,99. Com cerdas macias no centro da cabeça e com cerdas massageadoras nas extremidades, nossa escova Gengiva Pro se torna a escova ideal para auxiliar no tratamento gengival, ajudando a acalmar gengivas irritadas e se mostrando uma grande aliada para quem apresenta sangramento gengival. Disponível em 4 c"
+    "conteudo": "Escova Dental Gengiva PRO Cores Variadas. Preço: R$ 10,99. Com cerdas macias no centro da cabeça e com cerdas massageadoras nas extremidades, nossa escova Gengiva Pro se torna a escova ideal para auxiliar no tratamento gengival, ajudando a acalmar gengivas irritadas e se mostrando uma grande aliada para quem apresenta sangramento gengival. Disponível em 4 cores. Cores Variadas ( AZUL, ROXA, VERDE, VERMELHA).",
+    "descricao": "Com cerdas macias no centro da cabeça e com cerdas massageadoras nas extremidades, nossa escova Gengiva Pro se torna a escova ideal para auxiliar no tratamento gengival, ajudando a acalmar gengivas irritadas e se mostrando uma grande aliada para quem apresenta sangramento gengival. Disponível em 4 cores.\nCores Variadas ( AZUL, ROXA, VERDE, VERMELHA)"
   },
   {
     "id": "prod-16906",
@@ -761,7 +820,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "sortidas"
     ],
-    "conteudo": "Escova Dental Deep Clean Cores Sortidas. Preço: R$ 10,99. Escova de dente com cerdas anatômicas e ultrafinas, proporcionando uma escovação suave com maior eficiência e durabilidade que as escovas tradicionais. Possui carvão ativado na fórmula com ação bactericida e que auxilia no clareamento dental. Disponível em 4 cores. Para uma melhor experiência, utili"
+    "conteudo": "Escova Dental Deep Clean Cores Sortidas. Preço: R$ 10,99. Escova de dente com cerdas anatômicas e ultrafinas, proporcionando uma escovação suave com maior eficiência e durabilidade que as escovas tradicionais. Possui carvão ativado na fórmula com ação bactericida e que auxilia no clareamento dental. Disponível em 4 cores. Para uma melhor experiência, utilize os produtos da linhas OAZ para sua saúde bucal. Cores Sortidas: (VERMELHA, VERDE, ROXA e AZUL).",
+    "descricao": "Escova de dente com cerdas anatômicas e ultrafinas, proporcionando uma escovação suave com maior eficiência e durabilidade que as escovas tradicionais. Possui carvão ativado na fórmula com ação bactericida e que auxilia no clareamento dental. Disponível em 4 cores. Para uma melhor experiência, utilize os produtos da linhas OAZ para sua saúde bucal.\nCores Sortidas: (VERMELHA, VERDE, ROXA e AZUL)"
   },
   {
     "id": "prod-16901",
@@ -783,7 +843,8 @@ window.OAZ_KB = [
       "soft",
       "sortidas"
     ],
-    "conteudo": "Escova Dental Soft Class Cores Sortidas. Preço: R$ 7,99. Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores. Disponível em 4 cores e também no formato em kit. Cores Sortidas: ( AMARELA, CINZA, ROXA, AZUL)"
+    "conteudo": "Escova Dental Soft Class Cores Sortidas. Preço: R$ 7,99. Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores. Disponível em 4 cores e também no formato em kit. Cores Sortidas: ( AMARELA, CINZA, ROXA, AZUL).",
+    "descricao": "Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores. Disponível em 4 cores e também no formato em kit.\nCores Sortidas: ( AMARELA, CINZA, ROXA, AZUL)"
   },
   {
     "id": "prod-130",
@@ -805,7 +866,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar FPS 50 200ml. Preço: R$ 43,99. O protetor solar 50 FPS em creme da OAZ mantém o seu rosto e corpo hidratados enquanto você se protege dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar FPS 50 200ml. Preço: R$ 43,99. O protetor solar 50 FPS em creme da OAZ mantém o seu rosto e corpo hidratados enquanto você se protege dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Parfum, Helianthus Annuus (Sunflower) Seed Oil, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Cetearyl Alcohol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico.",
+    "descricao": "O protetor solar 50 FPS em creme da OAZ mantém o seu rosto e corpo hidratados enquanto você se protege dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Parfum, Helianthus Annuus (Sunflower) Seed Oil, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Cetearyl Alcohol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico."
   },
   {
     "id": "prod-129",
@@ -825,7 +888,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "valda"
     ],
-    "conteudo": "Enxaguante Bucal VALDA 250ml. Preço: R$ 16,80. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% do"
+    "conteudo": "Enxaguante Bucal VALDA 250ml. Preço: R$ 16,80. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool.",
+    "descricao": "O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool."
   },
   {
     "id": "prod-127",
@@ -844,7 +908,8 @@ window.OAZ_KB = [
       "fio",
       "higiene-bucal"
     ],
-    "conteudo": "Fio Dental 100+25m. Preço: R$ 13,99. Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta"
+    "conteudo": "Fio Dental 100+25m. Preço: R$ 13,99. Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta.",
+    "descricao": "Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta"
   },
   {
     "id": "prod-125",
@@ -867,7 +932,9 @@ window.OAZ_KB = [
       "perioaz",
       "saudáveis"
     ],
-    "conteudo": "Enxaguante Bucal PeriOAZ Gengivas saudáveis - Menta 250ml. Preço: R$ 23,99. O enxaguante bucal antisséptico PeriOAZ é sem alcool e não arde, sabor menta reduz a gengivite, placas bacterianas e mau hálito. Para um sorriso mais saudável e refrescante."
+    "conteudo": "Enxaguante Bucal PeriOAZ Gengivas saudáveis - Menta 250ml. Preço: R$ 23,99. O enxaguante bucal antisséptico PeriOAZ é sem alcool e não arde, sabor menta reduz a gengivite, placas bacterianas e mau hálito. Para um sorriso mais saudável e refrescante. Composição: Gluconato de Clorexidina.",
+    "descricao": "O enxaguante bucal antisséptico PeriOAZ é sem alcool e não arde, sabor menta reduz a gengivite, placas bacterianas e mau hálito. Para um sorriso mais saudável e refrescante.",
+    "composicao": "Gluconato de Clorexidina"
   },
   {
     "id": "prod-123",
@@ -887,7 +954,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "valda"
     ],
-    "conteudo": "Enxaguante Bucal VALDA 500ml. Preço: R$ 27,30. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% do"
+    "conteudo": "Enxaguante Bucal VALDA 500ml. Preço: R$ 27,30. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool.",
+    "descricao": "O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool."
   },
   {
     "id": "prod-99",
@@ -906,7 +974,9 @@ window.OAZ_KB = [
       "sabonete",
       "íntimo"
     ],
-    "conteudo": "Sabonete Íntimo PH Equilibrado 300ml. Preço: R$ 20,99. Com textura em gel, o sabonete íntimo OAZ foi desenvolvido exclusivamente para você manter o pH da região íntima equilibrado com proteção e conforto ao longo do dia. Além disso, sua fórmula é vegana e não contém adição de parabenos, promovendo confiança e bem-estar durante o seu dia-a-dia."
+    "conteudo": "Sabonete Íntimo PH Equilibrado 300ml. Preço: R$ 20,99. Com textura em gel, o sabonete íntimo OAZ foi desenvolvido exclusivamente para você manter o pH da região íntima equilibrado com proteção e conforto ao longo do dia. Além disso, sua fórmula é vegana e não contém adição de parabenos, promovendo confiança e bem-estar durante o seu dia-a-dia. Composição: Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylchloroisothiazolinone, Methylisothiazolinone, Parfum, Glycol Distearate, Sodium Chloride, Lactic Acid, Phenoxyetanol.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Fenoxietanol.",
+    "descricao": "Com textura em gel, o sabonete íntimo OAZ foi desenvolvido exclusivamente para você manter o pH da região íntima equilibrado com proteção e conforto ao longo do dia. Além disso, sua fórmula é vegana e não contém adição de parabenos, promovendo confiança e bem-estar durante o seu dia-a-dia.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylchloroisothiazolinone, Methylisothiazolinone, Parfum, Glycol Distearate, Sodium Chloride, Lactic Acid, Phenoxyetanol.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Fenoxietanol."
   },
   {
     "id": "prod-97",
@@ -925,7 +995,9 @@ window.OAZ_KB = [
       "sabonete",
       "íntimo"
     ],
-    "conteudo": "Sabonete Íntimo Diário 200ml. Preço: R$ 13,99. Com o sabonete íntimo , você reforça as defesas naturais de seu corpo com uma limpeza suave da região, promovendo conforto e segurança ao longo do dia. Sua fórmula vegana te auxilia a equilibrar o PH da região íntima sem adição de parabenos, pensada especialmente para manter sua saúde em dia."
+    "conteudo": "Sabonete Íntimo Diário 200ml. Preço: R$ 13,99. Com o sabonete íntimo , você reforça as defesas naturais de seu corpo com uma limpeza suave da região, promovendo conforto e segurança ao longo do dia. Sua fórmula vegana te auxilia a equilibrar o PH da região íntima sem adição de parabenos, pensada especialmente para manter sua saúde em dia. Composição: Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylisothiazolinone, Parfum, Gossypium Herbaceum (Coon) Seed Extract, Glycol Distearate, Sodium Chloride, Lactic Acid, Phenoxyethanol.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Extrato glicolico de Algodão, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Fenoxietanol.",
+    "descricao": "Com o sabonete íntimo , você reforça as defesas naturais de seu corpo com uma limpeza suave da região, promovendo conforto e segurança ao longo do dia. Sua fórmula vegana te auxilia a equilibrar o PH da região íntima sem adição de parabenos, pensada especialmente para manter sua saúde em dia.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylisothiazolinone, Parfum, Gossypium Herbaceum (Coon) Seed Extract, Glycol Distearate, Sodium Chloride, Lactic Acid, Phenoxyethanol.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Extrato glicolico de Algodão, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Fenoxietanol."
   },
   {
     "id": "prod-96",
@@ -945,7 +1017,9 @@ window.OAZ_KB = [
       "infantil",
       "repelente"
     ],
-    "conteudo": "Repelente Infantil Bob Esponja 100ml. Preço: R$ 18,99. O repelente Infantil Bob Esponja tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado."
+    "conteudo": "Repelente Infantil Bob Esponja 100ml. Preço: R$ 18,99. O repelente Infantil Bob Esponja tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado. Composição: Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide.",
+    "descricao": "O repelente Infantil Bob Esponja tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado.",
+    "composicao": "Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide."
   },
   {
     "id": "prod-95",
@@ -962,7 +1036,9 @@ window.OAZ_KB = [
       "200ml",
       "repelente"
     ],
-    "conteudo": "Repelente 200ml. Preço: R$ 22,99. O repelente adulto protege contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado."
+    "conteudo": "Repelente 200ml. Preço: R$ 22,99. O repelente adulto protege contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado. Composição: Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide.",
+    "descricao": "O repelente adulto protege contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado.",
+    "composicao": "Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide."
   },
   {
     "id": "prod-94",
@@ -984,7 +1060,9 @@ window.OAZ_KB = [
       "proteção",
       "repelente"
     ],
-    "conteudo": "Repelente Infantil OAZ Bob Esponja 8h de proteção 100ml. Preço: R$ 25,99. O repelente Infantil tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado."
+    "conteudo": "Repelente Infantil OAZ Bob Esponja 8h de proteção 100ml. Preço: R$ 25,99. O repelente Infantil tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado. Composição: Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide.",
+    "descricao": "O repelente Infantil tem ação contra insetos que transmitem Dengue, Zika, Chikungunya e Malária, enquanto hidrata a pele. É fácil de aplicar e tem rápida absorção. Dermatologicamente testado.",
+    "composicao": "Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide."
   },
   {
     "id": "prod-93",
@@ -1003,7 +1081,9 @@ window.OAZ_KB = [
       "proteção",
       "repelente"
     ],
-    "conteudo": "Repelente 10h de proteção 200ml. Preço: R$ 31,99. Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 15% de DEET, não é oleosa e proporciona hidratação para a pele."
+    "conteudo": "Repelente 10h de proteção 200ml. Preço: R$ 31,99. Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 15% de DEET, não é oleosa e proporciona hidratação para a pele. Composição: Composição: Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide.",
+    "descricao": "Repelente OAZ foi cuidadosamente desenvolvido para fornecer alta proteção contra insetos que transmitem Dengue, Zika, Chikungunya e Malária. Sua fórmula contém 15% de DEET, não é oleosa e proporciona hidratação para a pele.",
+    "composicao": "Composição: Aqua, Diethyl Toluamide, Isopropyl Myristate, Potassium Cetyl Phosphate (and) Hydrogenated Palm Glycerides, Cetearyl Alcohol, Glycerin, Hydroxypropyl Starch Phosphate, Hydroxyacetophenone, Phenoxyethanol, Xanthan Gum, Dissodium EDTA, BHT, Sodium Hydroxide."
   },
   {
     "id": "prod-92",
@@ -1025,7 +1105,8 @@ window.OAZ_KB = [
       "repelente",
       "solar"
     ],
-    "conteudo": "Protetor Solar e Repelente FPS 30 120ml. Preço: R$ 37,99. Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 30 e também das picadas de insetos. Dermatologicamente testado."
+    "conteudo": "Protetor Solar e Repelente FPS 30 120ml. Preço: R$ 37,99. Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 30 e também das picadas de insetos. Dermatologicamente testado.",
+    "descricao": "Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 30 e também das picadas de insetos. Dermatologicamente testado."
   },
   {
     "id": "prod-91",
@@ -1048,7 +1129,8 @@ window.OAZ_KB = [
       "repelente",
       "solar"
     ],
-    "conteudo": "Protetor Solar e Repelente OAZ - 60 FPS 120ml. Preço: R$ 50,99. Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 60 e também das picadas de insetos. Dermatologicamente testado."
+    "conteudo": "Protetor Solar e Repelente OAZ - 60 FPS 120ml. Preço: R$ 50,99. Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 60 e também das picadas de insetos. Dermatologicamente testado.",
+    "descricao": "Protetor 2 em 1 OAZ Desenvolvido para fornecer dupla proteção: proteger a pele do corpo dos efeitos nocivos dos raios UVA/UVB com FPS 60 e também das picadas de insetos. Dermatologicamente testado."
   },
   {
     "id": "prod-90",
@@ -1073,7 +1155,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 70 125ml. Preço: R$ 60,99. O protetor solar de 70 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 70 125ml. Preço: R$ 60,99. O protetor solar de 70 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico.",
+    "descricao": "O protetor solar de 70 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico."
   },
   {
     "id": "prod-88",
@@ -1095,7 +1179,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar FPS 70 200ml. Preço: R$ 53,99. Com alto fator de proteção, o protetor solar 70FPS da OAZ é ideal para curtir os dias ensolarados sem se preocupar com os efeitos nocivos dos raios UVA/UVB. Sua fórmula vegana é dermatologicamente testada e é Oil Free, garantindo toque seco e saudável da pele. Hidrata e fornece proteção muito alta p"
+    "conteudo": "Protetor Solar FPS 70 200ml. Preço: R$ 53,99. Com alto fator de proteção, o protetor solar 70FPS da OAZ é ideal para curtir os dias ensolarados sem se preocupar com os efeitos nocivos dos raios UVA/UVB. Sua fórmula vegana é dermatologicamente testada e é Oil Free, garantindo toque seco e saudável da pele. Hidrata e fornece proteção muito alta para a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Muito resistente à água. Fórmula Oil Free: pele com toque seco e saudável. Composição: Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Ethylhexyl Methoxycinnamate, Parfum, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, BHT, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "Com alto fator de proteção, o protetor solar 70FPS da OAZ é ideal para curtir os dias ensolarados sem se preocupar com os efeitos nocivos dos raios UVA/UVB. Sua fórmula vegana é dermatologicamente testada e é Oil Free, garantindo toque seco e saudável da pele.\nHidrata e fornece proteção muito alta para a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Muito resistente à água. Fórmula Oil Free: pele com toque seco e saudável.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Ethylhexyl Methoxycinnamate, Parfum, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, BHT, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-Hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-87",
@@ -1120,7 +1206,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 60 125ml. Preço: R$ 50,99. O protetor solar de 60 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 60 125ml. Preço: R$ 50,99. O protetor solar de 60 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico.",
+    "descricao": "O protetor solar de 60 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico."
   },
   {
     "id": "prod-86",
@@ -1143,7 +1231,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Aerossol  FPS 60 200ml. Preço: R$ 75,99. Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E."
+    "conteudo": "Protetor Solar Aerossol  FPS 60 200ml. Preço: R$ 75,99. Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E.",
+    "descricao": "Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E."
   },
   {
     "id": "prod-85",
@@ -1165,7 +1254,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar FPS 60 200ml. Preço: R$ 58,99. Com maior fator de durabilidade, o protetor solar 60 FPS em creme mantém seu rosto e corpo hidratados ao mesmo tempo em que inibe os efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar FPS 60 200ml. Preço: R$ 58,99. Com maior fator de durabilidade, o protetor solar 60 FPS em creme mantém seu rosto e corpo hidratados ao mesmo tempo em que inibe os efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Parfum, Helianthus Annuus (Sunflower) Seed Oil, Cetearyl Alcohol, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Álcool Cetoestearílico, ButilHidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Ácido Cítrico.",
+    "descricao": "Com maior fator de durabilidade, o protetor solar 60 FPS em creme mantém seu rosto e corpo hidratados ao mesmo tempo em que inibe os efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Glycerin, Sodium Hydroxide, Hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Glyceryl Stearate, PEG-100 Stearate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Parfum, Helianthus Annuus (Sunflower) Seed Oil, Cetearyl Alcohol, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Álcool Cetoestearílico, ButilHidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-84",
@@ -1190,7 +1281,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 50 125ml. Preço: R$ 48,99. O protetor solar de 50 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 50 125ml. Preço: R$ 48,99. O protetor solar de 50 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico.",
+    "descricao": "O protetor solar de 50 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico."
   },
   {
     "id": "prod-80",
@@ -1215,7 +1308,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 30 125ml. Preço: R$ 37,99. O protetor solar de 30 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar Infantil Bob Esponja FPS 30 125ml. Preço: R$ 37,99. O protetor solar de 30 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico.",
+    "descricao": "O protetor solar de 30 FPS em creme do Bob Esponja mantém o rosto e corpo das crianças hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Ácido Cítrico."
   },
   {
     "id": "prod-79",
@@ -1238,7 +1333,8 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar Aerossol FPS 30 200ml. Preço: R$ 59,99. Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E."
+    "conteudo": "Protetor Solar Aerossol FPS 30 200ml. Preço: R$ 59,99. Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E.",
+    "descricao": "Hidrata e protege a pele do rosto e do corpo dos efeitos nocivos dos raios UVA/UVB. Resistente à água e ao suor. Fórmula OilFree: pele com toque seco, saudável e hidratada pela Vitamina E."
   },
   {
     "id": "prod-78",
@@ -1260,7 +1356,9 @@ window.OAZ_KB = [
       "protetor-solar",
       "solar"
     ],
-    "conteudo": "Protetor Solar FPS 30 200ml. Preço: R$ 44,99. O protetor solar de 30 FPS em creme mantém o seu rosto e corpo hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado."
+    "conteudo": "Protetor Solar FPS 30 200ml. Preço: R$ 44,99. O protetor solar de 30 FPS em creme mantém o seu rosto e corpo hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado. Composição: Composição INCI: Aqua, Disodium EDTA, Glycerin, hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Parfum, Helianthus Annuus (Sunflower) Seed Oil, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Cetearyl Alcohol, Sodium Hydroxide, Citric Acid  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Avobenzona, Octissalato, Homossalato, Octocrileno, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Hidróxido de Sódio, Ácido Cítrico.",
+    "descricao": "O protetor solar de 30 FPS em creme mantém o seu rosto e corpo hidratados e protegidos dos efeitos nocivos dos raios UVA/UVB. O produto é vegano e deixa a pele com toque seco. Sem adição de parabenos e dermatologicamente testado.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Glycerin, hydroxyacetophenone, Phenoxyetanol, Potassium Cetyl Phosphate, Hydrogenated Palm Glycerides, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Homosalate, Octocrylene, Parfum, Helianthus Annuus (Sunflower) Seed Oil, BHT, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Xanthan Gum, Cetearyl Alcohol, Sodium Hydroxide, Citric Acid  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Avobenzona, Octissalato, Homossalato, Octocrileno, Perfume, Óleo de Girassol, Butil-Hidroxitolueno, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Goma Xantana, Álcool Cetoestearílico, Hidróxido de Sódio, Ácido Cítrico."
   },
   {
     "id": "prod-76",
@@ -1279,7 +1377,9 @@ window.OAZ_KB = [
       "pos-sol",
       "pós-sol"
     ],
-    "conteudo": "Pós-Sol Gel - 120ml. Preço: R$ 18,99. O pós-sol em gel te proporciona sensação de frescor e hidratação após alta exposição solar, garantindo alívio imediato para a sua pele. Possui fórmula vegana e sem adição de parabenos, sendo indicado também para peles oleosas."
+    "conteudo": "Pós-Sol Gel - 120ml. Preço: R$ 18,99. O pós-sol em gel te proporciona sensação de frescor e hidratação após alta exposição solar, garantindo alívio imediato para a sua pele. Possui fórmula vegana e sem adição de parabenos, sendo indicado também para peles oleosas. Composição: Composição INCI: Aqua, Dissodium EDTA, Glycerin, Carbomer, Triethanolamine, Phenoxyethanol, Decylene Glycol, Caprylyl Glycol, Menthol, Polisorbato 20, Corn Glycerides, Sorbitol, Bisabolol, Zingiber Oicinale Root Extract, CI 19140, CI 42090.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Carbômero, Trolamina, Fenoxietanol, Decilenoglicol, Caprililglicol, Mentol, Polissorbato 20, Glicerídeos de Óleo de Milho, Sorbitol, Levomenol, Extrato da Raiz de Gengibre, Corante Amarelo de Tartrazina, Corante Azul Brilhante.",
+    "descricao": "O pós-sol em gel te proporciona sensação de frescor e hidratação após alta exposição solar, garantindo alívio imediato para a sua pele. Possui fórmula vegana e sem adição de parabenos, sendo indicado também para peles oleosas.",
+    "composicao": "Composição INCI: Aqua, Dissodium EDTA, Glycerin, Carbomer, Triethanolamine, Phenoxyethanol, Decylene Glycol, Caprylyl Glycol, Menthol, Polisorbato 20, Corn Glycerides, Sorbitol, Bisabolol, Zingiber Oicinale Root Extract, CI 19140, CI 42090.  Composição PORTUGUÊS: Água, Edetato Dissódico, Glicerol, Carbômero, Trolamina, Fenoxietanol, Decilenoglicol, Caprililglicol, Mentol, Polissorbato 20, Glicerídeos de Óleo de Milho, Sorbitol, Levomenol, Extrato da Raiz de Gengibre, Corante Amarelo de Tartrazina, Corante Azul Brilhante."
   },
   {
     "id": "prod-75",
@@ -1298,7 +1398,9 @@ window.OAZ_KB = [
       "pos-sol",
       "pós-sol"
     ],
-    "conteudo": "Pós-Sol Aerossol 200ml. Preço: R$ 34,99. O pós-sol em aerossol foi desenvolvido para uso após a alta exposição no sol, garantindo a sensação de frescor, alívio e hidratação imediata com tecnologia em spray. Sua fórmula não é oleosa e traz a vantagem da uniformidade ao aplicar o produto pelo corpo, além de ser vegana e não conter adição de "
+    "conteudo": "Pós-Sol Aerossol 200ml. Preço: R$ 34,99. O pós-sol em aerossol foi desenvolvido para uso após a alta exposição no sol, garantindo a sensação de frescor, alívio e hidratação imediata com tecnologia em spray. Sua fórmula não é oleosa e traz a vantagem da uniformidade ao aplicar o produto pelo corpo, além de ser vegana e não conter adição de parabenos. Composição: Composição INCI: Calamine, Aluminum Starch Octenylsuccinate, Allantoin, Propylene Glycol, Alcohol, Camphor, BHT, Parfum, Limonene, Linalool, Butane, Propane, Isobutane.  Composição PORTUGUÊS: Calamina, Amidoctenilsuccinato de alumínio, Alantoína, Propilenoglicol, Álcool, Cânfora, Butil-Hidroxitolueno, Fragrância, Dextrolimoneno, Linalol, Butano, Propano, Isobutano.",
+    "descricao": "O pós-sol em aerossol foi desenvolvido para uso após a alta exposição no sol, garantindo a sensação de frescor, alívio e hidratação imediata com tecnologia em spray. Sua fórmula não é oleosa e traz a vantagem da uniformidade ao aplicar o produto pelo corpo, além de ser vegana e não conter adição de parabenos.",
+    "composicao": "Composição INCI: Calamine, Aluminum Starch Octenylsuccinate, Allantoin, Propylene Glycol, Alcohol, Camphor, BHT, Parfum, Limonene, Linalool, Butane, Propane, Isobutane.  Composição PORTUGUÊS: Calamina, Amidoctenilsuccinato de alumínio, Alantoína, Propilenoglicol, Álcool, Cânfora, Butil-Hidroxitolueno, Fragrância, Dextrolimoneno, Linalol, Butano, Propano, Isobutano."
   },
   {
     "id": "prod-74",
@@ -1318,7 +1420,9 @@ window.OAZ_KB = [
       "hidratante",
       "pernas"
     ],
-    "conteudo": "Creme hidratante Pernas cansadas 300ml. Preço: R$ 68,99. O hidratante para pernas cansadas é enriquecido com ativos relaxantes, pensado especialmente para você reduzir a sensação de cansaço e inchaço nas pernas após longos períodos em pé. Sua fórmula vegana conta com Cânfora, Mentol e Ginkgo Biloba, que proporcionam alívio imediato e aparência mais saudáv"
+    "conteudo": "Creme hidratante Pernas cansadas 300ml. Preço: R$ 68,99. O hidratante para pernas cansadas é enriquecido com ativos relaxantes, pensado especialmente para você reduzir a sensação de cansaço e inchaço nas pernas após longos períodos em pé. Sua fórmula vegana conta com Cânfora, Mentol e Ginkgo Biloba, que proporcionam alívio imediato e aparência mais saudável para as pernas. Composição: Composição INCI: Aqua, Cetearyl Alcohol, Parainum Liquidum, Glycerin, Cyclopentasiloxane, Polysorbate 60, Cetyl Alcohol, Dimethicone, Camphor, Ginkgo Biloba Leaf Extract, Menthol, Caprylyl Glycol, Phenoxyethanol, Carbomer, Triethanolamine, Disodium EDTA, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Farnesol, Glyceryl Laurate, Citric Acid.  Composição PORTUGUÊS: Água, Álcool Cetoestearílico, Óleo Mineral, Glicerol, Decametilciclopentasiloxano, Polissorbato 60, Álcool Cetílico, Dimeticona, Canfora, Extrato da Folha de Ginkgo Biloba, Mentol, Caprililglicol, Fenoxietanol, Carbômero, Trolamina, Edetato Dissódico, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Farnesol, Laurato de Glicerila, Ácido Cítrico.",
+    "descricao": "O hidratante para pernas cansadas é enriquecido com ativos relaxantes, pensado especialmente para você reduzir a sensação de cansaço e inchaço nas pernas após longos períodos em pé. Sua fórmula vegana conta com Cânfora, Mentol e Ginkgo Biloba, que proporcionam alívio imediato e aparência mais saudável para as pernas.",
+    "composicao": "Composição INCI: Aqua, Cetearyl Alcohol, Parainum Liquidum, Glycerin, Cyclopentasiloxane, Polysorbate 60, Cetyl Alcohol, Dimethicone, Camphor, Ginkgo Biloba Leaf Extract, Menthol, Caprylyl Glycol, Phenoxyethanol, Carbomer, Triethanolamine, Disodium EDTA, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Farnesol, Glyceryl Laurate, Citric Acid.  Composição PORTUGUÊS: Água, Álcool Cetoestearílico, Óleo Mineral, Glicerol, Decametilciclopentasiloxano, Polissorbato 60, Álcool Cetílico, Dimeticona, Canfora, Extrato da Folha de Ginkgo Biloba, Mentol, Caprililglicol, Fenoxietanol, Carbômero, Trolamina, Edetato Dissódico, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Farnesol, Laurato de Glicerila, Ácido Cítrico."
   },
   {
     "id": "prod-70",
@@ -1337,7 +1441,9 @@ window.OAZ_KB = [
       "hidratante",
       "labial"
     ],
-    "conteudo": "Hidratante Labial Cereja 10ml. Preço: R$ 19,99. Com o hidratante labial você mantém a umidade natural e evita o ressecamento da região. Sua fórmula mantém os lábios devidamente hidratados e sempre protegidos sem a adição de parabenos."
+    "conteudo": "Hidratante Labial Cereja 10ml. Preço: R$ 19,99. Com o hidratante labial você mantém a umidade natural e evita o ressecamento da região. Sua fórmula mantém os lábios devidamente hidratados e sempre protegidos sem a adição de parabenos. Composição: Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose.",
+    "descricao": "Com o hidratante labial você mantém a umidade natural e evita o ressecamento da região. Sua fórmula mantém os lábios devidamente hidratados e sempre protegidos sem a adição de parabenos.",
+    "composicao": "Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose."
   },
   {
     "id": "prod-68",
@@ -1359,7 +1465,9 @@ window.OAZ_KB = [
       "infantil",
       "ureia"
     ],
-    "conteudo": "Hidratante Infantil Com Ureia 3% Bob Esponja 150ml. Preço: R$ 28,99. Com ureia 3%, o hidratante infantil é perfeito para você manter a pele dos pequenos sempre hidratada. Além disso, o produto é vegano e não contém parabenos, promovendo uma hidratação intensa nas camadas profundas da pele por período prolongado."
+    "conteudo": "Hidratante Infantil Com Ureia 3% Bob Esponja 150ml. Preço: R$ 28,99. Com ureia 3%, o hidratante infantil é perfeito para você manter a pele dos pequenos sempre hidratada. Além disso, o produto é vegano e não contém parabenos, promovendo uma hidratação intensa nas camadas profundas da pele por período prolongado. Composição: Acqua, Cetearyl Alcohol, Glycerin, Parainum Liquidum, Urea Cyclopentasiloxane, PEG-15O ESTEARADO, ÁLCOOL CETEARÍLICO, POLISORBATO 60, STEARETH-20, Dimethicone (and) Dimethiconol, Cetyl Alcohol, Parfum, Gossypium rbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Frui! Oil, Persea Gratíssima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobro a Cacao (Cocoa) Seed Buer, Carbomer, Triethanolamine, Disodium EDTA, METHYLCHLOROISOTHIAZOLINONE • METHYLISOTHIAZOLINONE, BHT, Phenoxyethanol (and) Farnesol (and) Glyceryl Laurate.",
+    "descricao": "Com ureia 3%, o hidratante infantil é perfeito para você manter a pele dos pequenos sempre hidratada. Além disso, o produto é vegano e não contém parabenos, promovendo uma hidratação intensa nas camadas profundas da pele por período prolongado.",
+    "composicao": "Acqua, Cetearyl Alcohol, Glycerin, Parainum Liquidum, Urea Cyclopentasiloxane, PEG-15O ESTEARADO, ÁLCOOL CETEARÍLICO, POLISORBATO 60, STEARETH-20, Dimethicone (and) Dimethiconol, Cetyl Alcohol, Parfum, Gossypium rbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Frui! Oil, Persea Gratíssima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobro a Cacao (Cocoa) Seed Buer, Carbomer, Triethanolamine, Disodium EDTA, METHYLCHLOROISOTHIAZOLINONE • METHYLISOTHIAZOLINONE, BHT, Phenoxyethanol (and) Farnesol (and) Glyceryl Laurate"
   },
   {
     "id": "prod-65",
@@ -1380,7 +1488,9 @@ window.OAZ_KB = [
       "hidratante",
       "ureia"
     ],
-    "conteudo": "Hidratante Corporal Creme De Ureia 10% 150ml. Preço: R$ 42,99. Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos."
+    "conteudo": "Hidratante Corporal Creme De Ureia 10% 150ml. Preço: R$ 42,99. Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos. Composição: Composição INCI: Aqua, Disodium EDTA, Carbomer, Cetearyl Alcohol, Polysorbate 60, Cetyl Alcohol, Glycerin, Dimethicone, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol, Farnesol, Glyceryl Laurate, Parainum Liquidum, Triethanolamine, Urea, Cyclopentasiloxane, Parfum, Caprylyl Glycol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Trolamina, Ureia, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico.",
+    "descricao": "Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Carbomer, Cetearyl Alcohol, Polysorbate 60, Cetyl Alcohol, Glycerin, Dimethicone, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol, Farnesol, Glyceryl Laurate, Parainum Liquidum, Triethanolamine, Urea, Cyclopentasiloxane, Parfum, Caprylyl Glycol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Trolamina, Ureia, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico."
   },
   {
     "id": "prod-64",
@@ -1400,7 +1510,9 @@ window.OAZ_KB = [
       "hidratante",
       "índia"
     ],
-    "conteudo": "Hidratante Corporal Castanha Da Índia 200ml. Preço: R$ 49,99. O hidratante Castanha da Índia foi desenvolvido especialmente para aliviar a sensação de cansaço e de peso nas pernas após longos períodos em pé. Sua fórmula vegana possui efeito relaxante sem a adição de parabenos, promovendo seu alívio e bem-estar após a aplicação."
+    "conteudo": "Hidratante Corporal Castanha Da Índia 200ml. Preço: R$ 49,99. O hidratante Castanha da Índia foi desenvolvido especialmente para aliviar a sensação de cansaço e de peso nas pernas após longos períodos em pé. Sua fórmula vegana possui efeito relaxante sem a adição de parabenos, promovendo seu alívio e bem-estar após a aplicação. Composição: Composição INCI: Aqua, Cetearyl Alcohol, Glycerin, Parainum Liquidum, Cyclopentasiloxane, Emulsifyng Wax NF, Cetyl Alcohol, Dimethicone, Bertholletia excelsa seed oil, Centella Asiatica Extract, Parfum, Menthol, Caprylyl Glycol, Phenoxyethanol, Carbomer, Triethanolamine, Aesculus Hippocastanum Seed Extract, Disodium EDTA, Glycine Soja (Soybean) Oil, Gossypium Herbaceum (Coon) Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol (and) Farnesol (and) Glyceryl Laurate, Citric Acid, CI 16255, CI 19140, CI 28440, CI 14720.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Mentol, Trolamina, Extrato da Semente de Castanha-da-Índia, Óleo da Semente de Castanha-do-Brasil, Extrato de Centella Asiatica, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico, Corante Vermelho de Ponceau, Corante Amarelo de Tartrazina, Corante Preto 28440, Corante Vermelho de Azorrubina.",
+    "descricao": "O hidratante Castanha da Índia foi desenvolvido especialmente para aliviar a sensação de cansaço e de peso nas pernas após longos períodos em pé. Sua fórmula vegana possui efeito relaxante sem a adição de parabenos, promovendo seu alívio e bem-estar após a aplicação.",
+    "composicao": "Composição INCI: Aqua, Cetearyl Alcohol, Glycerin, Parainum Liquidum, Cyclopentasiloxane, Emulsifyng Wax NF, Cetyl Alcohol, Dimethicone, Bertholletia excelsa seed oil, Centella Asiatica Extract, Parfum, Menthol, Caprylyl Glycol, Phenoxyethanol, Carbomer, Triethanolamine, Aesculus Hippocastanum Seed Extract, Disodium EDTA, Glycine Soja (Soybean) Oil, Gossypium Herbaceum (Coon) Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol (and) Farnesol (and) Glyceryl Laurate, Citric Acid, CI 16255, CI 19140, CI 28440, CI 14720.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Mentol, Trolamina, Extrato da Semente de Castanha-da-Índia, Óleo da Semente de Castanha-do-Brasil, Extrato de Centella Asiatica, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico, Corante Vermelho de Ponceau, Corante Amarelo de Tartrazina, Corante Preto 28440, Corante Vermelho de Azorrubina."
   },
   {
     "id": "prod-37458",
@@ -1423,7 +1535,9 @@ window.OAZ_KB = [
       "protetor",
       "protetor-solar"
     ],
-    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 1. O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem."
+    "conteudo": "OAZ PROTETOR FACIAL FPS70 COR 1. O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem. Composição: Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-hidroxitolueno, Goma Xantana, Ácido Cítrico.",
+    "descricao": "O OAZ Protetor Facial FPS 70 Cor 1 oferece alta proteção diária contra os raios UVA e UVB , ajudando a prevenir queimaduras solares, manchas e o envelhecimento precoce da pele. Com textura leve e toque seco, é ideal para uso diário, inclusive antes da maquiagem.",
+    "composicao": "Água, Edetato Dissódico, Glicerol, Hidróxido de Sódio, Hidroxiacetofenona, Fenoxietanol, Cetil Fosfato de Potássio, Glicerídeos de Palma Hidrogenados, Monoestearato de Glicerila, Estearato de Macrogol 100, Avobenzona, Octissalato, Homossalato, Octocrileno, Ensulizole, Octinoxato, Perfume, Álcool Cetoestearílico, Crospolímero de Acrilatos/Acrilato de Alquila C10-30, Butil-hidroxitolueno, Goma Xantana, Ácido Cítrico."
   },
   {
     "id": "prod-24815",
@@ -1442,7 +1556,8 @@ window.OAZ_KB = [
       "kit",
       "labial"
     ],
-    "conteudo": "Kit Hidrante Labial. Preço: R$ 29,99. Kit Hidratante Labial OAZ, que inclui 1 unidade do Hidratante Labial Valda Morango e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de hidratação, proteção e sabor, ideal para cuidar dos lábios ressecados e deixá-los macios e saudáveis."
+    "conteudo": "Kit Hidrante Labial. Preço: R$ 29,99. Kit Hidratante Labial OAZ, que inclui 1 unidade do Hidratante Labial Valda Morango e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de hidratação, proteção e sabor, ideal para cuidar dos lábios ressecados e deixá-los macios e saudáveis.",
+    "descricao": "Kit Hidratante Labial OAZ, que inclui 1 unidade do Hidratante Labial Valda Morango e 1 unidade do Hidratante Labial Cereja OAZ 10ml. Este kit oferece uma combinação perfeita de hidratação, proteção e sabor, ideal para cuidar dos lábios ressecados e deixá-los macios e saudáveis."
   },
   {
     "id": "prod-24814",
@@ -1461,7 +1576,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "kit"
     ],
-    "conteudo": "Kit Higiene Bucal. Preço: R$ 23,99. Kit Higiene Bucal OAZ, que inclui 1 unidade da Escova Dental Soft Classic OAZ e 1 unidade do Enxaguante Bucal OAZ Protect 250ml. Este kit foi desenvolvido para oferecer uma rotina completa de cuidados bucais, garantindo limpeza, proteção e frescor para o seu sorriso."
+    "conteudo": "Kit Higiene Bucal. Preço: R$ 23,99. Kit Higiene Bucal OAZ, que inclui 1 unidade da Escova Dental Soft Classic OAZ e 1 unidade do Enxaguante Bucal OAZ Protect 250ml. Este kit foi desenvolvido para oferecer uma rotina completa de cuidados bucais, garantindo limpeza, proteção e frescor para o seu sorriso.",
+    "descricao": "Kit Higiene Bucal OAZ, que inclui 1 unidade da Escova Dental Soft Classic OAZ e 1 unidade do Enxaguante Bucal OAZ Protect 250ml. Este kit foi desenvolvido para oferecer uma rotina completa de cuidados bucais, garantindo limpeza, proteção e frescor para o seu sorriso."
   },
   {
     "id": "prod-24812",
@@ -1480,7 +1596,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "kit"
     ],
-    "conteudo": "Kit Escova Dental. Preço: R$ 17,99. Transforme sua rotina de higiene bucal com o Kit Escova Dental OAZ PRO WHITE com 2 Unidades! Desenvolvido para quem busca um sorriso mais branco e saudável, este kit oferece duas escovas dentais com tecnologia avançada, garantindo uma limpeza profunda e um clareamento dental gradual. Por que escolhe"
+    "conteudo": "Kit Escova Dental. Preço: R$ 17,99. Transforme sua rotina de higiene bucal com o Kit Escova Dental OAZ PRO WHITE com 2 Unidades! Desenvolvido para quem busca um sorriso mais branco e saudável, este kit oferece duas escovas dentais com tecnologia avançada, garantindo uma limpeza profunda e um clareamento dental gradual. Por que escolher o Kit OAZ PRO WHITE? • Cerdas especiais para clareamento: Com tecnologia exclusiva, as cerdas ajudam a remover manchas superficiais causadas por café, chá, vinho e outros pigmentos, deixando seus dentes mais brancos a cada uso. • Design ergonômico e confortável: O cabo antiderrapante e as cerdas ultramacias garantem uma escovação precisa e agradável, sem machucar gengivas ou esmalte dental. • Kit com 2 unidades: Praticidade para uso em casa ou na bolsa, perfeito para manter sua higiene bucal em dia onde estiver. Benefícios do produto: • Clareamento dental gradual: Remove manchas e devolve o brilho natural dos dentes. • Limpeza profunda: Alcança áreas difíceis, como espaços interdentais, prevenindo cáries, tártaro e mau hálito. • Economia e praticidade: Com duas escovas no kit, você tem um produto de qualidade por mais tempo.",
+    "descricao": "Transforme sua rotina de higiene bucal com o Kit Escova Dental OAZ PRO WHITE com 2 Unidades! Desenvolvido para quem busca um sorriso mais branco e saudável, este kit oferece duas escovas dentais com tecnologia avançada, garantindo uma limpeza profunda e um clareamento dental gradual.\nPor que escolher o Kit OAZ PRO WHITE?\n• Cerdas especiais para clareamento: Com tecnologia exclusiva, as cerdas ajudam a remover manchas superficiais causadas por café, chá, vinho e outros pigmentos, deixando seus dentes mais brancos a cada uso.\n• Design ergonômico e confortável: O cabo antiderrapante e as cerdas ultramacias garantem uma escovação precisa e agradável, sem machucar gengivas ou esmalte dental.\n• Kit com 2 unidades: Praticidade para uso em casa ou na bolsa, perfeito para manter sua higiene bucal em dia onde estiver.\nBenefícios do produto:\n• Clareamento dental gradual: Remove manchas e devolve o brilho natural dos dentes.\n• Limpeza profunda: Alcança áreas difíceis, como espaços interdentais, prevenindo cáries, tártaro e mau hálito.\n• Economia e praticidade: Com duas escovas no kit, você tem um produto de qualidade por mais tempo."
   },
   {
     "id": "prod-16932",
@@ -1503,7 +1620,8 @@ window.OAZ_KB = [
       "shark",
       "sortidas"
     ],
-    "conteudo": "Escova Dental Infantil Baby Shark Cores Sortidas. Preço: R$ 9,99. A escova BABY SHARK é recomendada para a primeira dentição, possui cabeça compacta, cerdas ultrafinas e niveladas, apropriada às crianças de 0 a 3 anos, com muita diversão. Cores Sortidas"
+    "conteudo": "Escova Dental Infantil Baby Shark Cores Sortidas. Preço: R$ 9,99. A escova BABY SHARK é recomendada para a primeira dentição, possui cabeça compacta, cerdas ultrafinas e niveladas, apropriada às crianças de 0 a 3 anos, com muita diversão. Cores Sortidas.",
+    "descricao": "A escova BABY SHARK é recomendada para a primeira dentição, possui cabeça compacta, cerdas ultrafinas e niveladas, apropriada às crianças de 0 a 3 anos, com muita diversão.\nCores Sortidas"
   },
   {
     "id": "prod-16926",
@@ -1526,7 +1644,8 @@ window.OAZ_KB = [
       "pro",
       "white"
     ],
-    "conteudo": "Kit Escova Dental Deep Clean + Pro White. Preço: R$ 17,99. Kit de escovas OAZ contém 1 unidade da Escova Dental Deep Clean e 1 unidade da Escova Dental PRO White, perfeito para a família."
+    "conteudo": "Kit Escova Dental Deep Clean + Pro White. Preço: R$ 17,99. Kit de escovas OAZ contém 1 unidade da Escova Dental Deep Clean e 1 unidade da Escova Dental PRO White, perfeito para a família.",
+    "descricao": "Kit de escovas OAZ contém 1 unidade da Escova Dental Deep Clean e 1 unidade da Escova Dental PRO White, perfeito para a família."
   },
   {
     "id": "prod-16921",
@@ -1547,7 +1666,8 @@ window.OAZ_KB = [
       "kit",
       "soft"
     ],
-    "conteudo": "Kit Escova Dental Soft Class. Preço: R$ 13,99. Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores."
+    "conteudo": "Kit Escova Dental Soft Class. Preço: R$ 13,99. Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores.",
+    "descricao": "Com cerdas macias e espiraladas, nossa escova Soft Class possui uma ponta de dupla ação, que por seu formato alongado possui uma ponta limpadora que permite alcançar os dentes posteriores."
   },
   {
     "id": "prod-16893",
@@ -1568,7 +1688,8 @@ window.OAZ_KB = [
       "oaz",
       "valda"
     ],
-    "conteudo": "Enxaguante Bucal OAZ VALDA 500ml. Preço: R$ 20,99. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% do"
+    "conteudo": "Enxaguante Bucal OAZ VALDA 500ml. Preço: R$ 20,99. O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool.",
+    "descricao": "O enxaguante bucal OAZ VALDA foi feito para você manter sua boca sempre limpa, protegida e saudável. Possui V-FR3SH, combinação exclusiva de Mentol, Eucaliptol e Timol, ativos que tem alto poder bactericida e trazem grande refrescância. O enxaguante possui ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool."
   },
   {
     "id": "prod-133",
@@ -1587,7 +1708,9 @@ window.OAZ_KB = [
       "menta",
       "valda"
     ],
-    "conteudo": "Hidratante Labial Valda Menta. Preço: R$ 20,99. Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que f"
+    "conteudo": "Hidratante Labial Valda Menta. Preço: R$ 20,99. Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que formam o V-FR3SH, fórmula exclusiva de Valda com Mentol, Timol e Eucaliptol que geram uma sensação de refrescância que só Valda tem. Dermatologicamente testado. Não testado em animais. Composição: Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose.",
+    "descricao": "Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que formam o V-FR3SH, fórmula exclusiva de Valda com Mentol, Timol e Eucaliptol que geram uma sensação de refrescância que só Valda tem. Dermatologicamente testado. Não testado em animais.",
+    "composicao": "Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose."
   },
   {
     "id": "prod-132",
@@ -1606,7 +1729,9 @@ window.OAZ_KB = [
       "morango",
       "valda"
     ],
-    "conteudo": "Hidratante Labial Valda Morango. Preço: R$ 20,99. Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que f"
+    "conteudo": "Hidratante Labial Valda Morango. Preço: R$ 20,99. Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que formam o V-FR3SH, fórmula exclusiva de Valda com Mentol, Timol e Eucaliptol que geram uma sensação de refrescância que só Valda tem. Dermatologicamente testado. Não testado em animais. Composição: Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose.",
+    "descricao": "Hidratante Labial OAZ Valda não só proporciona hidratação intensa e profunda a partir da Manteiga de Karité e da Vitamina E, como também possui exclusiva ação reparadora do SymRepair® 100, mantendo os lábios macios, protegidos e hidratados diariamente. Além disso, eles possuem óleos essenciais que formam o V-FR3SH, fórmula exclusiva de Valda com Mentol, Timol e Eucaliptol que geram uma sensação de refrescância que só Valda tem. Dermatologicamente testado. Não testado em animais.",
+    "composicao": "Composição INCI: PEG-40 Hydrogenated Castor Oil, Helianthus Annuus (Sunflower) Seed Oil, Butyrospermum Parkii (Shea) Buer, Tocopheryl Acetate, Caprylyl Glycol, Cetyl Alcohol, Synthetic Wax, Sorbitol, Hexyldecanol, Bisabolol, Cetylhydroxyproline Palmitamide, Stearic Acid, Brassica Campestris Sterols, Aroma, Sucralose.  Composição PORTUGUÊS: Óleo de Rícino Hidrogenado Etoxilado, Óleo de Girassol, Manteiga de Karité, Acetato de Tocoferila, Caprililglicol, Álcool Cetílico, Parafina, Sorbitol, Hexildecanol, Levomenol, Palmitamida de Cetilidroxiprolina, Ácido Esteárico, Esteróis de Colza, Aroma, Sucralose."
   },
   {
     "id": "prod-126",
@@ -1627,7 +1752,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "white"
     ],
-    "conteudo": "Enxaguante Bucal - White Fresh 500ml. Preço: R$ 23,99. O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito."
+    "conteudo": "Enxaguante Bucal - White Fresh 500ml. Preço: R$ 23,99. O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito.",
+    "descricao": "O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito."
   },
   {
     "id": "prod-124",
@@ -1646,7 +1772,8 @@ window.OAZ_KB = [
       "fio",
       "higiene-bucal"
     ],
-    "conteudo": "Fio Dental 50+25m. Preço: R$ 8,99. Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta"
+    "conteudo": "Fio Dental 50+25m. Preço: R$ 8,99. Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta.",
+    "descricao": "Ajuda a manter a gengiva saudavel, evita o acúmulo de placas, previne caries, remove até mesmo as placas mais dificeis de alcançar, sabor menta"
   },
   {
     "id": "prod-121",
@@ -1666,7 +1793,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "protect"
     ],
-    "conteudo": "Enxaguante Bucal Protect 250ml. Preço: R$ 26,99. O enxaguante bucal OAZ que oferece 12 horas de proteção contra manchas. Sabor menta, sem álcool."
+    "conteudo": "Enxaguante Bucal Protect 250ml. Preço: R$ 26,99. O enxaguante bucal OAZ que oferece 12 horas de proteção contra manchas. Sabor menta, sem álcool.",
+    "descricao": "O enxaguante bucal OAZ que oferece 12 horas de proteção contra manchas. Sabor menta, sem álcool."
   },
   {
     "id": "prod-120",
@@ -1687,7 +1815,8 @@ window.OAZ_KB = [
       "pro",
       "sensi"
     ],
-    "conteudo": "Enxaguante Bucal PRO Sensi 500ml. Preço: R$ 26,99. O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes."
+    "conteudo": "Enxaguante Bucal PRO Sensi 500ml. Preço: R$ 26,99. O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes.",
+    "descricao": "O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes."
   },
   {
     "id": "prod-119",
@@ -1708,7 +1837,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "white"
     ],
-    "conteudo": "Enxaguante Bucal White Fresh 250ml. Preço: R$ 15,99. O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito."
+    "conteudo": "Enxaguante Bucal White Fresh 250ml. Preço: R$ 15,99. O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito.",
+    "descricao": "O enxaguante bucal White Fresh sabor menta auxilia no branqueamento dos dentes, fortalecimento e protege contra os germes e mau halito."
   },
   {
     "id": "prod-117",
@@ -1729,7 +1859,9 @@ window.OAZ_KB = [
       "pro",
       "sensi"
     ],
-    "conteudo": "Enxaguante Bucal PRO Sensi 250ml. Preço: R$ 16,99. O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes."
+    "conteudo": "Enxaguante Bucal PRO Sensi 250ml. Preço: R$ 16,99. O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes. Composição: CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL WINTERGREEN TA38004, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE AZUL BRILHANTE N1 SOLÚVEL E ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,39.",
+    "descricao": "O enxaguante bucal Pro Sensi sabor menta auxilia no combate a sensibilidade, mau halito, germes e fortalece os dentes.",
+    "composicao": "CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL WINTERGREEN TA38004, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE AZUL BRILHANTE N1 SOLÚVEL E ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,39"
   },
   {
     "id": "prod-116",
@@ -1747,7 +1879,9 @@ window.OAZ_KB = [
       "enxaguante",
       "higiene-bucal"
     ],
-    "conteudo": "Enxaguante Bucal 1L. Preço: R$ 32,99. O enxaguante bucal OAZ Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool."
+    "conteudo": "Enxaguante Bucal 1L. Preço: R$ 32,99. O enxaguante bucal OAZ Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool. Composição: CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE VER FOLHA, CORANTE VERDE N3 SOLÚVEL e ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,73 PPM DE FLÚOR).",
+    "descricao": "O enxaguante bucal OAZ Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool.",
+    "composicao": "CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE VER FOLHA, CORANTE VERDE N3 SOLÚVEL e ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,73 PPM DE FLÚOR)."
   },
   {
     "id": "prod-98",
@@ -1767,7 +1901,9 @@ window.OAZ_KB = [
       "sabonete",
       "íntimo"
     ],
-    "conteudo": "Sabonete Íntimo Odor Block 300ml. Preço: R$ 20,99. Com o sabonete íntimo bloqueador de odor OAZ você mantém sua região íntima protegida e livre de cheiros indesejáveis. Além disso, sua fórmula vegana não contém adição de parabenos e possui tecnologia anti-odor, promovendo mais conforto e confiança durante a correria de seu dia-a-dia."
+    "conteudo": "Sabonete Íntimo Odor Block 300ml. Preço: R$ 20,99. Com o sabonete íntimo bloqueador de odor OAZ você mantém sua região íntima protegida e livre de cheiros indesejáveis. Além disso, sua fórmula vegana não contém adição de parabenos e possui tecnologia anti-odor, promovendo mais conforto e confiança durante a correria de seu dia-a-dia. Composição: Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylchloroisothiazolinone, Trehalose, Methylisothiazolinone, Parfum, Glycol Distearate, Sodium Chloride, Lactic Acid, Alpha-Glucan Oligosaccharide.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Trealose, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Alfa-Glucano Oligossacarídeo.",
+    "descricao": "Com o sabonete íntimo bloqueador de odor OAZ você mantém sua região íntima protegida e livre de cheiros indesejáveis. Além disso, sua fórmula vegana não contém adição de parabenos e possui tecnologia anti-odor, promovendo mais conforto e confiança durante a correria de seu dia-a-dia.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauryl Glucoside, Cocamide DEA, PEG-150 Distearate, Methylchloroisothiazolinone, Trehalose, Methylisothiazolinone, Parfum, Glycol Distearate, Sodium Chloride, Lactic Acid, Alpha-Glucan Oligosaccharide.  Composição PORTUGUÊS: Água, Edetato Dissódico, Cocoamidopropilbetaína, Lauril Éter Sulfato de Sódio, Lauril Glicosídeo, Dietanolamina Cocamida, Diestearato de Polietilenoglicol-150, Trealose, Metilcloroisotiazolinona, Metilisotiazolinona, Perfume, Diestearato de Etilenoglicol, Cloreto de Sódio, Ácido Lático, Alfa-Glucano Oligossacarídeo."
   },
   {
     "id": "prod-71",
@@ -1788,7 +1924,9 @@ window.OAZ_KB = [
       "loção",
       "ureia"
     ],
-    "conteudo": "Loção Hidratante Intensa Ureia 10% 300ml. Preço: R$ 53,99. Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos."
+    "conteudo": "Loção Hidratante Intensa Ureia 10% 300ml. Preço: R$ 53,99. Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos. Composição: Composição INCI: Aqua, Disodium EDTA, Carbomer, Cetearyl Alcohol, Polysorbate 60, Cetyl Alcohol, Glycerin, Dimethicone, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol, Farnesol, Glyceryl Laurate, Parainum Liquidum, Triethanolamine, Urea, Cyclopentasiloxane, Parfum, Caprylyl Glycol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Trolamina, Ureia, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico.",
+    "descricao": "Indicado para peles ressecadas, o hidratante de ureia 10% é ideal para você manter sua pele altamente hidratada e com toque suave por um longo período. Além de agir contra sintomas do ressecamento como coceira, pinicação e repuxamento, sua fórmula é vegana e não contém adição de parabenos.",
+    "composicao": "Composição INCI: Aqua, Disodium EDTA, Carbomer, Cetearyl Alcohol, Polysorbate 60, Cetyl Alcohol, Glycerin, Dimethicone, Glycine Soja (Soybean) Oil, Gossypium Herbaceum Seed Oil, Mangifera Indica (Mango) Seed Buer, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Theobroma Cacao (Cocoa) Seed Buer, BHT, Phenoxyethanol, Farnesol, Glyceryl Laurate, Parainum Liquidum, Triethanolamine, Urea, Cyclopentasiloxane, Parfum, Caprylyl Glycol, Citric Acid.  Composição PORTUGUÊS: Água, Edetato Dissódico, Carbômero, Álcool Cetoestearílico, Polissorbato 60, Álcool Cetílico, Glicerol, Dimeticona, Óleo de Soja, Óleo da Semente de Algodão, Manteiga da Semente de Manga, Óleo de Oliva, Óleo de Abacate, Óleo de Amêndoas, Manteiga da Semente de Cacau, Butil-Hidroxitolueno, Fenoxietanol, Farnesol, Laurato de Glicerila, Óleo Mineral, Trolamina, Ureia, Decametilciclopentasiloxano, Perfume, Caprililglicol, Ácido Cítrico."
   },
   {
     "id": "prod-61",
@@ -1808,6 +1946,8 @@ window.OAZ_KB = [
       "higiene-bucal",
       "hortelã"
     ],
-    "conteudo": "Enxaguante Bucal Hortelã 500ml. Preço: R$ 17,99. O enxaguante bucal Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool."
+    "conteudo": "Enxaguante Bucal Hortelã 500ml. Preço: R$ 17,99. O enxaguante bucal Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool. Composição: CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE VER FOLHA, CORANTE VERDE N3 SOLÚVEL e ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,73 PPM DE FLÚOR).",
+    "descricao": "O enxaguante bucal Fresh Care foi feito para você manter sua boca sempre limpa, protegida e saudável. Sua ação 5 em 1 te auxilia no combate de 99% dos germes causadores da placa bacteriana, mau hálito e gengivite. Além disso, o produto previne cáries e é livre de álcool.",
+    "composicao": "CLORETO DE CETILPIRIDINIO, FLUORETO DE SÓDIO, SORBATO DE POTÁSSIO, BENZOATO DE SÓDIO NF, SORBITOL, GLICERINA BRANCA, SACARINA SÓDICA, POLISORBATO 20, AROMA ARTIFICIAL DE MENTA TA37586, CORANTE VER FOLHA, CORANTE VERDE N3 SOLÚVEL e ÁGUA PURIFICADA. CONTÉM FLUORETO DE SÓDIO (97,73 PPM DE FLÚOR)."
   }
 ];
